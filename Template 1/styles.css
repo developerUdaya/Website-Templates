@@ -24,7 +24,7 @@ body{
     }
 }
 .top-bar{
-    background-color: #0d2b33;
+    background-color: #002B3D;
     color: #d1d1d1;
     display: flex;
     justify-content: space-between;
@@ -136,10 +136,19 @@ body{
 .dropdown:hover > .dropdown-menu {
     display: block;
 }
+.dropsdown:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100px;
+    height: 100%;
+    background: transparent;
+}
 .submenu {
     position: absolute;
     top: 0;
-    left: 224.5%;
+    left: 140.5%;
     background: white;
     display: none;
     list-style: none;
@@ -150,13 +159,13 @@ body{
 .sub_menu {
     position: absolute;
     top: 0;
-    left: 169.5%;
+    left: 212.2%;
     background: white;
     display: none;
     list-style: none;
     padding: 0;
     min-width: 200px;
-    border: 1px solid black; 
+    border: 0.5px solid black; 
     flex-direction: column;
 }
 .sub_menu li {
@@ -235,7 +244,7 @@ input {
     text-align: center;
 }
 .track-btn {
-    background-color: #f44336;
+    background-color: #003366;
     color: white;
     border: none;
     padding: 10px 0px;
@@ -243,9 +252,6 @@ input {
     cursor: pointer;
     border-radius: 50px;
     font-weight: bold;
-}
-.track-btn:hover {
-    background-color: #d32f2f;
 }
 .help-text {
     font-size: 12px;
@@ -296,7 +302,7 @@ input {
 .menu-icon {
     width: 115px; 
     height: 92px; 
-    background-color: #e34c26;
+    background-color: #003366; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -311,7 +317,7 @@ input {
 .sticky-nav .menu-icon {
     width: 115px;
     height: 92px;
-    background-color: #e34c26; 
+    background-color: #003366; 
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -373,7 +379,7 @@ input {
     .menu-icon {
         width: 90px; 
         height: 70px; 
-        background-color: #e34c26;
+        background-color: #003366;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -422,6 +428,26 @@ input {
     width: 80px; 
     height: 60px;
     stroke-width: 1; 
+}
+.close-btn line {
+    stroke-dasharray: 20;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 0.5s ease-in-out;
+}
+.close-btn:hover line {
+    stroke-dashoffset: -20;
+    transition: stroke-dashoffset 0.5s ease-in-out;
+}
+.close-btn:hover line {
+    animation: lineReveal 0.5s ease-in-out 0.6s forwards;
+}
+@keyframes lineReveal {
+    from {
+        stroke-dashoffset: 20;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 .symbol{
     margin-top:80px;
@@ -492,7 +518,7 @@ input {
 .hero-image {
     width: 92px;
     height: auto;
-    padding-top: 22px;
+    padding-top: 0px;
     margin-left: 50px;
     animation: slideIn 1s ease-out forwards;
 }
@@ -542,7 +568,7 @@ input {
         text-align: center;
     }
     .hero-title {
-        font-size: 60px;
+        font-size: 50px;
         letter-spacing: -1.5px;
         margin-top: -20px;
     }
@@ -598,7 +624,7 @@ input {
     filter: invert(0); 
 }
 .grid-item.active, .grid-item:hover {
-    background-color: #ff4423;
+    background-color: #003366;
     color: white;
     cursor:default;
 }
@@ -663,7 +689,7 @@ input {
 .number {
     font-size: 30px;
     font-weight: bold;
-    color: #ff4423;
+    color: #003366;
     min-width: 40px; 
 }
 .point p {
@@ -804,18 +830,19 @@ input {
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    background: #F24132;
+    background:  #003366;
     padding: 30px;
 }
 .marquee {
     display: flex;
     width: max-content;
-    animation: marquee-scroll 15s linear infinite;
+    animation: marquee-scroll 10
+    s linear infinite;
 }
 .marquee-content {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
     font-size: 42px;
     font-weight: bold;
     color: white;
@@ -827,16 +854,11 @@ input {
         transform: translateX(0);
     }
     to {
-        transform: translateX(-30%);
+        transform: translateX(-50%);
     }
 }
 .marquee-content img {
-    width: 60px;
-    height: auto;
-}
-.marquee-content .arrow-images{
-    padding-left: 40px;
-    width: 100px;
+    width: 80px;
     height: auto;
 }
 .image-section {
@@ -864,7 +886,7 @@ input {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(10, 0, 0, 0.5);
+    background: rgba(10, 0, 0, 0.715);
     top: 0;
     left: 0;
 }
@@ -922,7 +944,7 @@ input {
     height:auto;
     margin:0px;
     padding:130px 60px;
-    background-color: #082b35;
+    background-color:#003366;
     color: white;
     font-family: Arial, sans-serif;
 }
@@ -935,7 +957,7 @@ table {
 th, td {
     padding: 30px;
     text-align: left;
-    border-bottom: 1px solid #2c444d;
+    border-bottom: 1px solid white;
 }
 th {
     font-size: 18px;
@@ -947,7 +969,7 @@ td p{
     font-size: 16px;
 }
 .row {
-    border-bottom: 1px solid #2c444d;
+    border-bottom: 1px solid white;
 }
 .expand-content {
     display: none;
@@ -971,7 +993,7 @@ td p{
         height:auto;
         margin:0px;
         padding:100px 20px;
-        background-color: #082b35;
+        background-color: #003366;
         color: white;
         font-family: Arial, sans-serif;
     }
@@ -989,7 +1011,7 @@ td p{
     }
     .toggle-btn {
         position:relative;
-        left: 50px;
+        left: 25px;
         top: -5px;
     }
 }
@@ -999,7 +1021,7 @@ td p{
         height:auto;
         margin:0px;
         padding:100px 20px;
-        background-color: #082b35;
+        background-color:#003366;
         color: white;
         font-family: Arial, sans-serif;
     }
@@ -1062,20 +1084,23 @@ td p{
     overflow: hidden;
 }
 .image-containers img {
-    width: 120%;
-    border-radius: 10px;
-    margin-left:120px;
+    width: 90%;
+    border-radius: 30px;
+    margin-left:90px;
 }
 .project-scope {
     position: absolute;
     width: 40%;
-    margin-right:600px;
+    margin-right:650px;
     margin-top:160px;
+}
+.project-scope img{
+    width:35%;
 }
 .text-content {
     width: 100%;
-    padding-left: 270px;
-    margin-bottom:10px;
+    padding-left: 150px;
+    margin-bottom:10px; 
 }
 .text-content h1 {
     font-size: 50px;
@@ -1103,13 +1128,13 @@ td p{
 }
 .features li::before {
     content: "✔";
-    color: red;
+    color: black;
     font-weight: bold;
     margin-right: 10px;
 }
 .read-more {
     margin-top: 10px;
-    background: red;
+    background:  #003366;
     color: white;
     padding: 20px 24px;
     border: none;
@@ -1117,8 +1142,8 @@ td p{
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
 }
+
 @media(max-width:1160px){
     .company-section {
         display: flex;
@@ -1134,7 +1159,7 @@ td p{
         overflow: hidden;
     }
     .image-containers img {
-        width: 110%;
+        width: 100%;
         border-radius: 10px;
         margin-left:70px;
     }
@@ -1184,14 +1209,14 @@ td p{
         overflow: hidden;
     }
     .image-containers img {
-        width: 90%;
+        width: 70%;
         border-radius: 10px;
-        margin-left:20px;
+        margin-left:125px;
     }
     .project-scope {
         position: absolute;
         left:100px;
-        top:18%;
+        top:28%;
     }
     .project-scope img{
         width:50%;
@@ -1239,14 +1264,68 @@ td p{
         overflow: hidden;
     }
     .image-containers img {
-        width: 90%;
+        width: 80%;
         border-radius: 10px;
         margin-left:40px;
     }
     .project-scope {
         position: absolute;
         left:40px;
-        top:19%;
+        top:22%;
+    }
+    .project-scope img{
+        width:50%;
+        height: auto;
+    }
+    .text-content {
+        width: 100%;
+        margin-bottom:10px;
+        padding: 10px;
+        margin-top:50px;
+    }
+    .text-content h1 {
+        font-size: 35px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .project-scope, .text-content {
+        transform: translateY(0); 
+        transition: transform 0.1s ease-out;
+        will-change: transform;
+    }
+    .features {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-bottom: 20px;
+    }
+    .read-more {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .company-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width:100%;
+        height:auto;
+        padding: 0 40px;
+        padding-top: 150px;
+        padding-bottom: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+    .image-containers img {
+        width: 90%;
+        border-radius: 10px;
+        margin-left:30px;
+    }
+    .project-scope {
+        position: absolute;
+        left:40px;
+        top:14%;
     }
     .project-scope img{
         width:50%;
@@ -1284,6 +1363,7 @@ td p{
     height:auto;
     padding: 25px 85px;
     background-color: white;
+    padding-bottom: 100px;
 }
 h1 {
     font-size: 55px;
@@ -1318,7 +1398,7 @@ h1 {
 .date-box .date {
     padding: 10px 15px;
     font-size: 18px;
-    background-color: #ff3d2b;
+    background-color: #003366;
     color: white;
     border-right: 2px solid white;
     text-align: center;
@@ -1326,12 +1406,12 @@ h1 {
 .date-box .month {
     padding: 10px 15px;
     font-size: 18px;
-    background-color: #ff3d2b;
+    background-color: #003366;
     color: white;
     text-align: center;
 }
 .news-text {
-    margin-top: 100px;
+    margin-top: 70px;
 }
 .news-text .category {
     font-size: 18px;
@@ -1354,7 +1434,7 @@ h1 {
     margin-left: 5px;
     font-size:25px;
     font-weight: bold;
-    color: red;
+    color: black;
 }
 .news-image img {
     width: 550px;
@@ -1451,7 +1531,7 @@ h1 {
     }
 }
 .footer {
-    background-color: #082c37;
+    background-color: #003366;
     padding: 50px 50px;
     bottom:0;
     width:100%;

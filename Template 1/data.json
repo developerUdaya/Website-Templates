@@ -1,0 +1,170 @@
+{
+  "title": "Reliable Cargo & Logistics Solutions",
+  "points": [
+      {
+          "number": "01",
+          "text": "We provide cutting-edge freight solutions across land, air, and sea, ensuring seamless transportation for businesses worldwide."
+      },
+      {
+          "number": "02",
+          "text": "Our commitment to reliability, transparency, and customer satisfaction drives us to deliver every shipment with precision and care."
+      }
+  ],
+  "image": "image/cargo.png",
+  
+  
+  "sidePanel": {
+      "symbolImage": "image/BBC.png",
+      "title": "Blue & Beyond Cargo",
+      "description": "Delivering reliable and efficient cargo solutions across land, sea, and air.",
+      "image": "image/containers.png",
+      "address": "123 Main Street, Los Angeles, CA",
+      "addressLink": "https://www.google.com/maps?q=123+Main+Street,+Los+Angeles,+CA",
+      "phone": "+1 312-555-1234",
+      "email": "contact@deepbluecargo.com",
+      "socials": [
+          { "icon": "fab fa-linkedin", "link": "https://www.linkedin.com/" },
+          { "icon": "fab fa-instagram", "link": "https://www.instagram.com/" },
+          { "icon": "fab fa-facebook", "link": "https://www.facebook.com/" }
+      ]
+  },
+
+  "heroSection": {
+      "title": "Blue & Beyond Cargo",
+      "image": "image/BBC.png"
+  },
+
+  "boatImage": "image/ships.png",
+
+  "gridItems": [
+    { "type": "text", "content": "OceanFlow" },
+    { "type": "text", "content": "SkyLiner" },
+    { "type": "text", "content": "SwiftHaul" },
+    { "type": "text", "content": "CargoWave" },
+    { "type": "text", "content": "BeyondXpress" },
+    { "type": "text", "content": "GlideFreight" },
+    { "type": "text", "content": "HarborLink" },
+    { "type": "text", "content": "AeroShip" }
+],
+
+  "imageSection": {
+    "backgroundImage": "image/Group.png",
+    "overlayImage": "image/BBC-img.png",
+    "heading": "Moving Cargo <br> Beyond Limits"
+  },
+
+  "services": [
+    {
+      "name": "Freight Forwarding",
+      "description": "Seamless transportation solutions for global cargo movement.",
+      "expandedContent": "We specialize in efficient freight forwarding across sea, air, and land, ensuring timely and secure deliveries. Our extensive network and strategic partnerships enable smooth logistics operations worldwide."
+    },
+    {
+      "name": "Supply Chain Management",
+      "description": "Optimized logistics strategies to enhance efficiency and reduce costs.",
+      "expandedContent": "We streamline supply chains with real-time tracking, demand forecasting, and advanced inventory management. Our tailored solutions help businesses stay agile and competitive in a dynamic market."
+    },
+    {
+      "name": "Warehousing & Distribution",
+      "description": "Secure storage and efficient distribution for your cargo needs.",
+      "expandedContent": "Our state-of-the-art warehouses ensure safe storage with climate control, inventory tracking, and just-in-time distribution. We provide customized solutions to meet diverse business requirements."
+    },
+    {
+      "name": "Customs Clearance",
+      "description": "Hassle-free customs handling for smooth international trade.",
+      "expandedContent": "We navigate complex regulations, ensuring swift customs processing, compliance, and duty optimization. Our expertise helps businesses avoid delays and unnecessary expenses in cross-border trade."
+    }
+  ],
+
+  "companySection": {
+      "title": "Driving the Future of Cargo & Logistics",
+      "images": {
+          "container": "image/container.png",
+          "projectScope": "image/project-scope.png"
+      },
+      "features": [
+        "Fast Delivery",
+        "Global Reach",
+        "Real-Time Tracking",
+        "Secure Handling",
+        "Smart Warehousing",
+        "Customs Expertise"
+      ]
+  },
+
+  "newsSection": {
+      "title": "Latest in Cargo & Logistics",
+      "news": [
+          {
+              "date": "12",
+              "month": "March",
+              "category": "• Industry",
+              "headline": "Game-Changing Freight Innovations",
+              "image": "image/cargo-ship.png",
+              "link": "#"
+          },
+          {
+              "date": "05",
+              "month": "March",
+              "category": "• Supply Chain",
+              "headline": "AI in Logistics: A New Era",
+              "image": "image/ai-img.png",
+              "link": "#"
+          },
+          {
+              "date": "20",
+              "month": "February",
+              "category": "• Trade",
+              "headline": "Cross-Border Shipping Trends",
+              "image": "image/transport.jpg",
+              "link": "#"
+          }
+      ]
+  },
+
+  "footer": {
+    "logo": "image/BBC-footer-logo.png",
+    "description": "Reliable cargo solutions for smooth global delivery.",
+    "socialLinks": {
+      "linkedin": "https://www.linkedin.com/",
+      "instagram": "https://www.instagram.com/",
+      "facebook": "https://www.facebook.com/"
+    },
+    "copyright": "All Rights Reserved © 2024 Blue & Beyond Cargo",
+    "columns": [
+      {
+        "title": "Company",
+        "links": [
+          { "text": "About Us", "url": "#" },
+          { "text": "Our Services", "url": "#" },
+          { "text": "Our Team", "url": "#" },
+          { "text": "Careers", "url": "#" },
+          { "text": "Client Stories", "url": "#" },
+          { "text": "FAQ Pages", "url": "#" }
+        ]
+      },
+      {
+        "title": "Services",
+        "links": [
+          { "text": "Request a Quote", "url": "#" },
+          { "text": "Freight Solutions", "url": "#" },
+          { "text": "Logistics Planning", "url": "#" },
+          { "text": "Tracking & Security", "url": "#" },
+          { "text": "Warehousing", "url": "#" },
+          { "text": "Custom Clearance", "url": "#" }
+        ]
+      },
+      {
+        "title": "Contact",
+        "links": [
+          { "text": "Contact Us", "url": "#" },
+          { "text": "Help Center", "url": "#" },
+          { "text": "Live Support", "url": "#" },
+          { "text": "Global Offices", "url": "#" },
+          { "text": "24/7 Assistance", "url": "#" }
+        ]
+      }
+    ]
+  }
+}
+
