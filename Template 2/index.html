@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <Title>GlobeFarer - Transportation and Logistics Theme</Title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <section>
+            <nav class="navbar">
+                <div>
+                    <img src="image/logo-light.svg" alt="nav-image" class="nav-logo" onclick="location.reload();">
+                </div>
+                <ul class="nav-section">
+                    <li class="nav-links">
+                        <a href="#">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Main Home</a></li>
+                            <li><a href="#" class="redirect">Cargo Shipping</a></li>
+                            <li><a href="#" class="redirect">Maritime Transport</a></li>
+                            <li><a href="#" class="redirect">Air Freight</a></li>
+                            <li><a href="#" class="redirect">Rail Freight</a></li>
+                            <li><a href="#" class="redirect">Coming Soon</a></li>
+                            <li><a href="#" class="redirect">Divided Slider Home</a></li>
+                            <li><a href="#" class="redirect">Landing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#">Pages</a>
+                        <ul class="dropdown">
+                            <li><a href="#" class="redirect">About Us</a></li>
+                            <li><a href="#" class="redirect">Our Team</a></li>
+                            <li><a href="#" class="redirect">Meet The Crew</a></li>
+                            <li><a href="#" class="redirect">Job Application</a></li>
+                            <li><a href="#" class="redirect">Available Positions</a></li>
+                            <li><a href="#" class="redirect">Our Clients</a></li>
+                            <li><a href="#" class="redirect">FAQ Page</a></li>
+                            <li><a href="#" class="redirect">404 Error Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#">Services</a>
+                        <ul class="dropdown">
+                            <li><a href="#" class="redirect">Our Services</a></li>
+                            <li><a href="#" class="redirect">What We Do</a></li>
+                            <li><a href="#" class="redirect">Request a Freight</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#">Blog</a>
+                        <ul class="dropdown">
+                            <li><a href="#" class="redirect">Right Sidebar</a></li>
+                            <li><a href="#" class="redirect">Left Sidebar</a></li>
+                            <li><a href="#" class="redirect">No Sidebar</a></li>
+                            <li class="dropdowns">
+                                <a href="#">Post Types</a>
+                                <ul class="submenu">
+                                    <li><a href="#" class="redirect">Standard Post</a></li>
+                                    <li><a href="#" class="redirect">Gallery Post</a></li>
+                                    <li><a href="#" class="redirect">Quote Post</a></li>
+                                    <li><a href="#" class="redirect">Link Post</a></li>
+                                    <li><a href="#" class="redirect">Audio Post</a></li>
+                                    <li><a href="#" class="redirect">Video Post</a></li>
+                                    <li><a href="#" class="redirect">No Sidebar Post</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#">Contact</a>
+                        <ul class="dropdown">
+                            <li><a href="#" class="redirect">Get in Touch</a></li>
+                            <li><a href="#" class="redirect">Global Network</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="track-order">
+                    <a href="#">Track Your Order</a>
+                    <div class="order-dropdown">
+                        <p>Keep track of your packages</p>
+                        <input type="text" id="trackingId" placeholder="Tracking ID">
+                        <p id="errorMessage" class="error-message">⚠ Please enter a tracking ID</p>
+                        <button class="track-button" id="trackButton"><span>Track and Trace</span></button>
+                        <p class="success-message" id="successMessage">Thank you for your message. It has been sent.</p>
+                        <p class="need-help"><a href="#" onclick="refreshPage()">Need help?</a></p>
+                    </div>
+                </div>
+                <div class="desktop-menu">
+                    <button class="menu-button" id="menuButton">
+                        <div class="menu-line"></div>
+                        <div class="menu-line"></div>
+                        <div class="menu-line"></div>
+                    </button>
+                </div>
+                <div class="mobile-menu">
+                    <button class="mobile-menu-button" id="mobileMenuButton">
+                        <div class="mobile-menu-line"></div>
+                        <div class="mobile-menu-line"></div>
+                        <div class="mobile-menu-line"></div>
+                    </button>
+                </div>
+            </nav>
+        </section>
+        
+
+        <section class="mobile-navigation">
+            <div>
+                <img src="image/logo-light.svg" alt="nav-image" class="nav-logo" onclick="location.reload();">
+            </div>
+            <button class="navigation-close-button" id="navigationCloseButton">
+                <svg width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+                <line x1="6" y1="18" x2="18" y2="6"></line>
+            </svg></button>
+            <ul class="navigation-section">
+                <li class="navigation-links" onclick="location.reload();"><a href="#">Home</a></li>
+                <li class="navigation-links redirect"><a href="#">Pages</a></li>
+                <li class="navigation-links redirect"><a href="#">Services</a></li>
+                <li class="navigation-links redirect"><a href="#">Blog</a></li>
+                <li class="navigation-links redirect"><a href="#">Contact</a></li>
+            </ul>
+        </section>
+
+
+        <section>
+            <div class="side-panel" id=sidePanel>
+                <button id="closeButton" class="close-button">
+                    <svg width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                        <line x1="6" y1="18" x2="18" y2="6"></line>
+                    </svg>
+                </button>
+                <div>
+                    <img src="image/logo-light.svg" alt="logo" class="side-panel-logo" onclick="refreshPage()">
+                </div>
+                <div class="description">
+                    <p>Everything your logistics business needs is already here! GlobeFarer, a theme made for transport service companies.</p>
+                </div>
+                <div class="contact-section">
+                    <p class="support">Support center 24/7</p>
+                    <p class="phone-number"><a href="tel:+37593156427">+ 3 759 315 - 6427</a></p>
+                </div>
+                <div class="info">
+                    <div>
+                        <p class="label">You can find us at</p>
+                        <p class="address"><a href="https://www.google.com/maps/place/cedarways/@-6.1366896,106.8071456,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69f60270000001:0xd4f100527e902b5d!8m2!3d-6.1366896!4d106.8097205!16s%2Fg%2F11y3ypr50h?entry=ttu&g_ep=EgoyMDI1MDMyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">Roa Malaka,<br>West Jakarta City </a></p>
+                    </div>
+                    <div>
+                        <p class="label">Get in touch with us</p>
+                        <p class="email"><a href="mailto:globe@example.com">globe@example.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <nav class="sticky-navbar">
+                <div>
+                    <img src="image/logo-light.svg" alt="nav-image" class="nav-logo" onclick="refreshPage()">
+                </div>
+                <ul class="sticky-nav-section">
+                    <li class="sticky-nav-links">
+                        <a href="#">Home</a>
+                        <ul class="sticky-dropdown">
+                            <li><a href="#">Main Home</a></li>
+                            <li><a href="#" class="redirect">Cargo Shipping</a></li>
+                            <li><a href="#" class="redirect">Maritime Transport</a></li>
+                            <li><a href="#" class="redirect">Air Freight</a></li>
+                            <li><a href="#" class="redirect">Rail Freight</a></li>
+                            <li><a href="#" class="redirect">Coming Soon</a></li>
+                            <li><a href="#" class="redirect">Divided Slider Home</a></li>
+                            <li><a href="#" class="redirect">Landing</a></li>
+                        </ul>
+                    </li>
+                    <li class="sticky-nav-links">
+                        <a href="#">Pages</a>
+                        <ul class="sticky-dropdown">
+                            <li><a href="#" class="redirect">About Us</a></li>
+                            <li><a href="#" class="redirect">Our Team</a></li>
+                            <li><a href="#" class="redirect">Meet The Crew</a></li>
+                            <li><a href="#" class="redirect">Job Application</a></li>
+                            <li><a href="#" class="redirect">Available Positions</a></li>
+                            <li><a href="#" class="redirect">Our Clients</a></li>
+                            <li><a href="#" class="redirect">FAQ Page</a></li>
+                            <li><a href="#" class="redirect">404 Error Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="sticky-nav-links">
+                        <a href="#">Services</a>
+                        <ul class="sticky-dropdown">
+                            <li><a href="#" class="redirect">Our Services</a></li>
+                            <li><a href="#" class="redirect">What We Do</a></li>
+                            <li><a href="#" class="redirect">Request a Freight</a></li>
+                        </ul>
+                    </li>
+                    <li class="sticky-nav-links">
+                        <a href="#">Blog</a>
+                        <ul class="sticky-dropdown">
+                            <li><a href="#" class="redirect">Right Sidebar</a></li>
+                            <li><a href="#" class="redirect">Left Sidebar</a></li>
+                            <li><a href="#" class="redirect">No Sidebar</a></li>
+                            <li class="sticky-dropdowns">
+                                <a href="#">Post Types</a>
+                                <ul class="sticky-submenu">
+                                    <li><a href="#" class="redirect">Standard Post</a></li>
+                                    <li><a href="#" class="redirect">Gallery Post</a></li>
+                                    <li><a href="#" class="redirect">Quote Post</a></li>
+                                    <li><a href="#" class="redirect">Link Post</a></li>
+                                    <li><a href="#" class="redirect">Audio Post</a></li>
+                                    <li><a href="#" class="redirect">Video Post</a></li>
+                                    <li><a href="#" class="redirect">No Sidebar Post</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sticky-nav-links">
+                        <a href="#">Contact</a>
+                        <ul class="sticky-dropdown">
+                            <li><a href="#" class="redirect">Get in Touch</a></li>
+                            <li><a href="#" class="redirect">Global Network</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class=>
+                    <button class="sticky-menu-button" id="stickyMenuButton">
+                        <div class="sticky-menu-line"></div>
+                        <div class="sticky-menu-line"></div>
+                        <div class="sticky-menu-line"></div>
+                    </button>
+                </div>
+            </nav>
+        </section>
+
+        <section>
+            <div class="sticky-side-panel" id=stickySidePanel>
+                <button id="stickyCloseButton" class="sticky-close-button">
+                    <svg width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                        <line x1="6" y1="18" x2="18" y2="6"></line>
+                    </svg>
+                </button>
+                <div>
+                    <img src="image/logo-light.svg" alt="logo" class="sticky-side-panel-logo" onclick="refreshPage()">
+                </div>
+                <div class="sticky-description">
+                    <p>Everything your logistics business needs is already here! GlobeFarer, a theme made for transport service companies.</p>
+                </div>
+                <div class="sticky-contact-section">
+                    <p class="sticky-support">Support center 24/7</p>
+                    <p class="sticky-phone-number"><a href="tel:+37593156427">+ 3 759 315 - 6427</a></p>
+                </div>
+                <div class="sticky-info">
+                    <div>
+                        <p class="sticky-label">You can find us at</p>
+                        <p class="sticky-address"><a href="https://www.google.com/maps/place/cedarways/@-6.1366896,106.8071456,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69f60270000001:0xd4f100527e902b5d!8m2!3d-6.1366896!4d106.8097205!16s%2Fg%2F11y3ypr50h?entry=ttu&g_ep=EgoyMDI1MDMyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">Roa Malaka,<br>West Jakarta City </a></p>
+                    </div>
+                    <div>
+                        <p class="sticky-label">Get in touch with us</p>
+                        <p class="sticky-email"><a href="mailto:globe@example.com">globe@example.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="hero-slider">
+                <div class="slides">
+                    <div class="slide active" style="background-image: url('image/ocean-freight.png');" data-title="Ocean Freight" data-quote="Worldwide shipping and professional solutions" data-subquote="No matter the location we got you covered with our global shipping!"></div>
+                    <div class="slide" style="background-image: url('image/land-transport.png');" data-title="Land Transport" data-quote="Fast and secure courier for all your packages" data-subquote="Your packages will not be damaged with our expert courier services."></div>
+                    <div class="slide" style="background-image: url('image/air-freight.png');" data-title="Air Freight" data-quote="We provide super-fast and fuss-free delivery service" data-subquote="We guarantee no complications and full refunds in case of damages."></div>
+                    <div class="slide" style="background-image: url('image/warehousing.png');" data-title="Warehousing" data-quote="Always stay ahead of schedule with GlobeFarer" data-subquote="Cost efficient & always on time, that's our transport company moto!"></div>
+                </div>
+
+                <button id="prev-slide" class="nav-arrow left">&lt;</button>
+                <button id="next-slide" class="nav-arrow right">&gt;</button>
+
+                <div class="logo">
+                    <img src="image/logo-light.svg" alt="Hero-section-logo">
+                </div>
+
+                <div class="hero-content">
+                    <h1 id="main-quote">Worldwide shipping and professional solutions</h1>
+                    <p id="sub-quote">No matter the location we got you covered with our global shipping!</p>
+                </div>
+
+                <div class="bottom-content">
+                    <div class="title-container">
+                        <div class="title-box">
+                            <span id="title1">Ocean Freight</span>
+                            <div class="progress-bar" id="progress1"></div>
+                        </div>
+                        <div class="title-box">
+                            <span id="title2">Land Transport</span>
+                            <div class="progress-bar" id="progress2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-one">
+            <div class="text-content">
+                <h1>Fast and reliable shipping services</h1>
+                <p>Lorem ipsum dolor sit amet, et sale ad mutat nusqua ius ea has autem aeterno divine sum.</p>
+                <div class="button-content redirect">
+                    <div class="plus">+</div>
+                    <span>View more<br>about our services</span>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="image/mini-van.png" alt="mini-van">
+            </div>
+        </section>
+
+        <section class="person-section">
+            <img src="image/person.png" alt="Person" class="background-image">
+            <div class="person-content">
+                <div class="quote">❝</div>
+                <h1>Eos no dico graeci sea, debet nihil omnium quodsi quot dolores percipit.</h1>
+                <div class="client-info">
+                    <img src="image/co-founder.png" alt="Client Image" class="client-img">
+                    <div class="client-text">
+                        <p class="client-title">Satisfied Client</p>
+                        <p class="client-name">George Moreno</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="freight-types">
+            <div class="service">
+                <img src="image/ship-icon.png" alt="ship-icon">
+                <h3>Ocean Freight</h3>
+                <p>Vix ut ignota deserunt partien ad, pros tale falli periculis ad, idque deseruisse constituam.</p>
+            </div>
+            <div class="service">
+                <img src="image/train-icon.png" alt="train-icon">
+                <h3>Rail Freight</h3>
+                <p>Vix ut ignota deserunt partien ad, pros tale falli periculis ad, idque deseruisse constituam.</p>
+            </div>
+            <div class="service">
+                <img src="image/truck-icon.png" alt="truck-icon">
+                <h3>Land Freight</h3>
+                <p>Vix ut ignota deserunt partien ad, pros tale falli periculis ad, idque deseruisse constituam.</p>
+            </div>
+            <div class="service">
+                <img src="image/flight-icon.png" alt="flight-icon">
+                <h3>Air Freight</h3>
+                <p>Vix ut ignota deserunt partien ad, pros tale falli periculis ad, idque deseruisse constituam.</p>
+            </div>
+        </section>
+
+        <section class="container-two">
+            <div class="text-content">
+                <h1>Secure courier for all your packages</h1>
+                <p>Lorem ipsum dolor sit amet, et sale ad mutat nusqua ius ea has autem aeterno divine sum.</p>
+                <div class="button-content redirect">
+                    <div class="plus">+</div>
+                    <span>View more<br>about our services</span>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="image/building.png" alt="building">
+            </div>
+        </section>
+
+        <section class="team-section">
+            <h2>Meet the Team</h2>
+            <div class="team-container">
+                <div class="team-members">
+                    <img src="image/developer.png" alt="Developer">
+                    <div class="info">
+                        <p class="role">Developer</p>
+                        <p class="name">Lionel Todd</p>
+                    </div>
+                </div>
+                <div class="team-members">
+                    <img src="image/copywriter.png" alt="Copywriter">
+                    <div class="info">
+                        <p class="role">Copywriter</p>
+                        <p class="name">Nina West</p>
+                    </div>
+                </div>
+                <div class="team-members">
+                    <img src="image/co-founder.png" alt="Co Founder">
+                    <div class="info">
+                        <p class="role">Co Founder</p>
+                        <p class="name">Scott Moran</p>
+                    </div>
+                </div>
+                <div class="team-members">
+                    <img src="image/web-designer.png" alt="Web Designer">
+                    <div class="info">
+                        <p class="role">Web Designer</p>
+                        <p class="name">Susie Marsh</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="truck-section">
+                <img src="image/truck.png" alt="truck" class="truck-image">
+                <div class="truck-text-content">
+                    <h1>We provide the best and fastest courier services nowadays</h1>
+                    <p>Id veniam malorum mel. At tempor euismod postulant commodo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="text-section">
+                <p class="redirect">An innovative service for easy & fast shipments, transportation coordinated by qualified staff</p>
+            </div>
+        </section>
+
+        <section class="blog-section">
+            <h2 class="blog-heading">Latest blog posts</h2>
+            <div class="blog-cards">
+                <div class="blog-card">
+                    <img src="image/blog-1.png" alt="blog-1">
+                    <div class="blog-content">
+                        <div>
+                            <span class="date">09</span>
+                            <h3 class="month">Aug</h3>
+                        </div>
+                        <div class="blog-text">
+                            <p class="blog-category">Agriculture</p>
+                            <h2 class="blog-title">The Great Innovators</h2>
+                            <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue ligula</p>
+                            <div class="read-more">
+                                <button class="plus-button">+</button>
+                                <span>Read more</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="image/blog-2.png" alt="blog-2">
+                    <div class="blog-content">
+                        <div>
+                            <span class="date">09</span>
+                            <h3 class="month">Aug</h3>
+                        </div>
+                        <div class="blog-text">
+                            <p class="blog-category">Agriculture</p>
+                            <h2 class="blog-title">The Story of Civilization</h2>
+                            <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue ligula</p>
+                            <div class="read-more">
+                                <button class="plus-button">+</button>
+                                <span>Read more</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="image/blog-3.png" alt="blog-3">
+                    <div class="blog-content">
+                        <div>
+                            <span class="date">09</span>
+                            <h3 class="month">Aug</h3>
+                        </div>
+                        <div class="blog-text">
+                            <p class="blog-category">Agriculture</p>
+                            <h2 class="blog-title">Building For Society</h2>
+                            <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue ligula</p>
+                            <div class="read-more">
+                                <button class="plus-button">+</button>
+                                <span>Read more</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="image/logo-light.svg" alt="footer-logo" onclick="refreshPage()">
+                </div>
+                <div class="footer-section">
+                    <div class="footer-column">
+                        <h3>Our Divisions</h3>
+                        <ul>
+                            <li class="redirect">About Us</li>
+                            <li class="redirect">Our Team</li>
+                            <li class="redirect">Our Clients</li>
+                            <li class="redirect">Meet The Crew</li>
+                            <li class="redirect">Available Positions</li>
+                            <li class="redirect">Job Application</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Company Service</h3>
+                        <ul>
+                            <li class="redirect">Our Services</li>
+                            <li class="redirect">What We Do</li>
+                            <li class="redirect">Request a Freight</li>
+                            <li class="redirect">Track & Trace</li>
+                            <li class="redirect">Air Freight</li>
+                            <li class="redirect">Rail Freight</li>
+                            <li class="redirect">Maritime Transport</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li class="redirect">Find Us Here</li>
+                            <li class="redirect">Get In Touch</li>
+                            <li class="redirect">FAQ Page</li>
+                            <li class="redirect">Global Network</li>
+                            <li class="redirect">Support 24/7</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Latest News</h3>
+                        <ul>
+                            <li class="redirect">Expert Tips</li>
+                            <li class="redirect">A Sustainable Future</li>
+                            <li class="redirect">Fresh Start</li>
+                            <li class="redirect">Clean Spaces</li>
+                            <li class="redirect">Tips & Strategies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2021 Qode Interactive, All Rights Reserved</p>
+                <div class="social-icons">
+                    <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://vimeo.com/" target="_blank"><i class="fab fa-vimeo"></i></a>
+                </div>
+            </div>
+        </section>
+        
+        <script src="javascript.js"></script>
+    </body>
+</html>
