@@ -1,0 +1,387 @@
+{
+    "topLinks": [
+        { "name": "About", "href": "#"
+        },
+        { "name": "Contact", "href": "#"
+        },
+        { "name": "FAQ", "href": "#"
+        }
+    ],
+    "contactInfo": [
+        { "icon": "fa-phone", "text": "+919843483083"
+        },
+        { "icon": "fa-envelope", "text": "cancopierservices@gmail.com", "href": "mailto:cancopierservices@gmail.com"
+        }
+    ],
+    "sliderData": [
+        {
+            "image": "img/slider2.jpg",
+            "title": "We Provide <span>Medical</span> Services That You Can <span>Trust!</span>",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam.",
+            "buttons": [
+                { "text": "Get Appointment", "href": "#", "class": "btn"
+                },
+                { "text": "Learn More", "href": "#", "class": "btn primary"
+                }
+            ]
+        },
+        {
+            "image": "img/slider.jpg",
+            "title": "We Provide <span>Medical</span> Services That You Can <span>Trust!</span>",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam.",
+            "buttons": [
+                { "text": "Get Appointment", "href": "#", "class": "btn"
+                },
+                { "text": "About Us", "href": "#", "class": "btn primary"
+                }
+            ]
+        },
+        {
+            "image": "img/slider3.jpg",
+            "title": "We Provide <span>Medical</span> Services That You Can <span>Trust!</span>",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam.",
+            "buttons": [
+                { "text": "Get Appointment", "href": "#", "class": "btn"
+                },
+                { "text": "Contact Now", "href": "#", "class": "btn primary"
+                }
+            ]
+        }
+    ],
+    "scheduleData": [
+        {
+            "icon": "fa fa-ambulance",
+            "category": "Lorem Amet",
+            "title": "Emergency Cases",
+            "description": "Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.",
+            "link": "#",
+            "linkText": "LEARN MORE"
+        },
+        {
+            "icon": "icofont-prescription",
+            "category": "Fusce Porttitor",
+            "title": "Doctors Timetable",
+            "description": "Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.",
+            "link": "#",
+            "linkText": "LEARN MORE"
+        },
+        {
+            "icon": "icofont-ui-clock",
+            "category": "Donec luctus",
+            "title": "Opening Hours",
+            "timings": [
+                { "day": "Monday - Friday", "hours": "8.00-20.00"
+                },
+                { "day": "Saturday", "hours": "9.00-18.30"
+                },
+                { "day": "Monday - Thursday", "hours": "9.00-15.00"
+                }
+            ],
+            "link": "#",
+            "linkText": "LEARN MORE"
+        }
+    ],
+    "featuresData": [
+        {
+            "icon": "icofont icofont-ambulance-cross",
+            "title": "Emergency Help",
+            "description": "Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate."
+        },
+        {
+            "icon": "icofont icofont-medical-sign-alt",
+            "title": "Enriched Pharmacy",
+            "description": "Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate."
+        },
+        {
+            "icon": "icofont icofont-stethoscope",
+            "title": "Medical Treatment",
+            "description": "Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate."
+        }
+    ],
+    "funFactsData": [
+        { "icon": "icofont icofont-home", "count": 3468, "text": "Hospital Rooms"
+        },
+        { "icon": "icofont icofont-user-alt-3", "count": 557, "text": "Specialist Doctors"
+        },
+        { "icon": "icofont-simple-smile", "count": 4379, "text": "Happy Patients"
+        },
+        { "icon": "icofont icofont-table", "count": 32, "text": "Years of Experience"
+        }
+    ],
+    "whyChooseData": {
+        "title": "We Offer Different Services To Improve Your Health",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts",
+        "image": "img/section-img.png",
+        "whoWeAre": {
+            "title": "Who We Are",
+            "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra antege vel est lobortis, a commodo magna rhoncus. In quis nisi non emet quam pharetra commodo.",
+                "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+            ],
+            "listItems": [
+                "Maecenas vitae luctus nibh.",
+                "Duis massa massa.",
+                "Aliquam feugiat interdum."
+            ]
+        },
+        "videoLink": "https://www.youtube.com/watch?v=RFVXy6CRVR4"
+    },
+
+    "callActionData": {
+        "title": "Do you need Emergency Medical Care? Call @ 1234 56789",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor dictum turpis nec gravida.",
+        "buttons": [
+            { "text": "Contact Now", "link": "#"
+            },
+            { "text": "Learn More", "link": "#", "icon": "fa fa-long-arrow-right"
+            }
+        ]
+    },
+    "portfolioData": [
+        {
+            "image": "img/pf1.jpg",
+            "details_link": "portfolio-details.html"
+        },
+        {
+            "image": "img/pf2.jpg",
+            "details_link": "portfolio-details.html"
+        },
+        {
+            "image": "img/pf3.jpg",
+            "details_link": "portfolio-details.html"
+        },
+        {
+            "image": "img/pf4.jpg",
+            "details_link": "portfolio-details.html"
+        },
+        {
+            "image": "img/pf1.jpg",
+            "details_link": "portfolio-details.html"
+        },
+        {
+            "image": "img/pf2.jpg",
+            "details_link": "portfolio-details.html"
+        },
+        {
+            "image": "img/pf3.jpg",
+            "details_link": "portfolio-details.html"
+        },
+        {
+            "image": "img/pf4.jpg",
+            "details_link": "portfolio-details.html"
+        }
+    ],
+    "servicesData": [
+        {
+            "icon": "icofont-prescription",
+            "title": "General Treatment",
+            "details_link": "service-details.html",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+        },
+        {
+            "icon": "icofont-tooth",
+            "title": "Teeth Whitening",
+            "details_link": "service-details.html",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+        },
+        {
+            "icon": "icofont-heart-alt",
+            "title": "Heart Surgery",
+            "details_link": "service-details.html",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+        },
+        {
+            "icon": "icofont-listening",
+            "title": "Ear Treatment",
+            "details_link": "service-details.html",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+        },
+        {
+            "icon": "icofont-eye-alt",
+            "title": "Vision Problems",
+            "details_link": "service-details.html",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+        },
+        {
+            "icon": "icofont-blood",
+            "title": "Blood Transfusion",
+            "details_link": "service-details.html",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+        }
+    ],
+    "pricingData": [
+        {
+            "icon": "icofont-ui-cut",
+            "title": "Plastic Surgery",
+            "price": "$199",
+            "duration": "/ Per Visit",
+            "features": [
+                "Lorem ipsum dolor sit",
+                "Cubitur sollicitudin fentum",
+                "Nullam interdum enim",
+                "Donec ultricies metus",
+                "Pellentesque eget nibh"
+            ],
+            "available": [
+                true,
+                true,
+                false,
+                false,
+                false
+            ]
+        },
+        {
+            "icon": "icofont-tooth",
+            "title": "Teeth Whitening",
+            "price": "$299",
+            "duration": "/ Per Visit",
+            "features": [
+                "Lorem ipsum dolor sit",
+                "Cubitur sollicitudin fentum",
+                "Nullam interdum enim",
+                "Donec ultricies metus",
+                "Pellentesque eget nibh"
+            ],
+            "available": [
+                true,
+                true,
+                true,
+                false,
+                false
+            ]
+        },
+        {
+            "icon": "icofont-heart-beat",
+            "title": "Heart Surgery",
+            "price": "$399",
+            "duration": "/ Per Visit",
+            "features": [
+                "Lorem ipsum dolor sit",
+                "Cubitur sollicitudin fentum",
+                "Nullam interdum enim",
+                "Donec ultricies metus",
+                "Pellentesque eget nibh"
+            ],
+            "available": [
+                true,
+                true,
+                true,
+                true,
+                true
+            ]
+        }
+    ],
+    "blogData": [
+        {
+            "image": "img/blog1.jpg",
+            "date": "22 Aug, 2020",
+            "title": "We have announced our new product.",
+            "link": "blog-single.html",
+            "description": "Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed."
+        },
+        {
+            "image": "img/blog2.jpg",
+            "date": "15 Jul, 2020",
+            "title": "Top five ways for solving teeth problems.",
+            "link": "blog-single.html",
+            "description": "Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed."
+        },
+        {
+            "image": "img/blog3.jpg",
+            "date": "05 Jan, 2020",
+            "title": "We provide highly business solutions.",
+            "link": "blog-single.html",
+            "description": "Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed."
+        }
+    ],
+    "clientsData": [
+        "img/client1.png",
+        "img/client2.png",
+        "img/client3.png",
+        "img/client4.png",
+        "img/client5.png",
+        "img/client1.png",
+        "img/client2.png",
+        "img/client3.png",
+        "img/client4.png"
+    ],
+    "aboutUsData": {
+        "about": {
+            "title": "About Us",
+            "description": "Can Copier Services are leaders in providing the best solution for your Photocopiers need. We are Selling, Servicing, Renting & AMC at customer satisfaction over 10 years.",
+            "socialLinks": [
+                {
+                    "icon": "fab fa-facebook-f",
+                    "url": "#"
+                },
+                {
+                    "icon": "fab fa-google-plus-g",
+                    "url": "#"
+                },
+                {
+                    "icon": "fab fa-twitter",
+                    "url": "#"
+                },
+                {
+                    "icon": "fab fa-vimeo-v",
+                    "url": "#"
+                },
+                {
+                    "icon": "fab fa-pinterest",
+                    "url": "#"
+                }
+            ]
+        },
+        "quickLinks": [
+            {
+                "title": "Home",
+                "url": "#"
+            },
+            {
+                "title": "About Us",
+                "url": "#"
+            },
+            {
+                "title": "Services",
+                "url": "#"
+            },
+            {
+                "title": "Our Cases",
+                "url": "#"
+            },
+            {
+                "title": "Contact Us",
+                "url": "#"
+            }
+        ],
+        "openHours": {
+            "title": "Open Hours",
+            "description": "We are available to assist you during the following hours:",
+            "hours": [
+                {
+                    "day": "Monday - Friday",
+                    "time": "8:00 AM - 8:00 PM"
+                },
+                {
+                    "day": "Saturday",
+                    "time": "9:00 AM - 6:30 PM"
+                },
+                {
+                    "day": "Sunday",
+                    "time": "Closed"
+                }
+            ]
+        },
+        "newsletter": {
+            "title": "Newsletter",
+            "description": "Subscribe to our newsletter for the latest updates and special offers."
+        },
+        "copyright": {
+            "text": "© {year} | All Rights Reserved by",
+            "url": "https://yourwebsite.com",
+            "name": "YourWebsite"
+        }
+    }
+}
+
+

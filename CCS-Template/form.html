@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Collection Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px 15px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Data Collection Form</h1>
+
+<form id="dataForm">
+  <!-- Header Section -->
+  <h2>Header</h2>
+  <div class="form-group">
+    <label for="topLinks">Top Links (comma-separated)</label>
+    <input type="text" id="topLinks" name="topLinks" placeholder="About,Doctors,Contact,FAQ">
+  </div>
+
+  <div class="form-group">
+    <label for="topContacts">Top Contacts</label>
+    <textarea id="topContacts" name="topContacts" rows="3" placeholder="Icon,Text Icon,Text"></textarea>
+  </div>
+
+  <!-- Hero Slider Section -->
+  <h2>Hero Slider</h2>
+  <div class="form-group">
+    <label for="heroSliderImage1">Slide 1 Image</label>
+    <input type="text" id="heroSliderImage1" name="heroSlider[0].image" placeholder="img/slider2.jpg">
+  </div>
+  <div class="form-group">
+    <label for="heroSliderTitle1">Slide 1 Title</label>
+    <input type="text" id="heroSliderTitle1" name="heroSlider[0].title" placeholder="We Provide Medical Services That You Can Trust!">
+  </div>
+  <div class="form-group">
+    <label for="heroSliderDesc1">Slide 1 Description</label>
+    <textarea id="heroSliderDesc1" name="heroSlider[0].description" rows="3" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></textarea>
+  </div>
+
+  <!-- Repeat similar blocks for Slide 2 and Slide 3 -->
+
+  <!-- Schedule Cards Section -->
+  <h2>Schedule Cards</h2>
+  <div class="form-group">
+    <label for="scheduleCardIcon1">Card 1 Icon</label>
+    <input type="text" id="scheduleCardIcon1" name="scheduleCards[0].icon" placeholder="fa fa-ambulance">
+  </div>
+  <div class="form-group">
+    <label for="scheduleCardTitle1">Card 1 Title</label>
+    <input type="text" id="scheduleCardTitle1" name="scheduleCards[0].title" placeholder="Emergency Cases">
+  </div>
+  <div class="form-group">
+    <label for="scheduleCardDesc1">Card 1 Description</label>
+    <textarea id="scheduleCardDesc1" name="scheduleCards[0].description" rows="3" placeholder="Lorem ipsum dolor sit amet consectetur adipiscing elit."></textarea>
+  </div>
+
+  <!-- Repeat similar blocks for Card 2 and Card 3 -->
+
+  <!-- Features Cards Section -->
+  <h2>Features Cards</h2>
+  <div class="form-group">
+    <label for="featuresCardIcon1">Card 1 Icon</label>
+    <input type="text" id="featuresCardIcon1" name="featuresCards[0].icon" placeholder="icofont-ambulance-cross">
+  </div>
+  <div class="form-group">
+    <label for="featuresCardTitle1">Card 1 Title</label>
+    <input type="text" id="featuresCardTitle1" name="featuresCards[0].title" placeholder="Emergency Help">
+  </div>
+  <div class="form-group">
+    <label for="featuresCardDesc1">Card 1 Description</label>
+    <textarea id="featuresCardDesc1" name="featuresCards[0].description" rows="3" placeholder="Lorem ipsum dolor sit amet consectetur adipiscing elit."></textarea>
+  </div>
+
+  <!-- Repeat similar blocks for Card 2 and Card 3 -->
+
+  <!-- Fun Facts Cards Section -->
+  <h2>Fun Facts Cards</h2>
+  <div class="form-group">
+    <label for="funFactsCardIcon1">Card 1 Icon</label>
+    <input type="text" id="funFactsCardIcon1" name="funFactsCards[0].icon" placeholder="icofont-home">
+  </div>
+  <div class="form-group">
+    <label for="funFactsCardTitle1">Card 1 Title</label>
+    <input type="text" id="funFactsCardTitle1" name="funFactsCards[0].title" placeholder="Hospital Rooms">
+  </div>
+  <div class="form-group">
+    <label for="funFactsCardCount1">Card 1 Count</label>
+    <input type="number" id="funFactsCardCount1" name="funFactsCards[0].count" placeholder="3468">
+  </div>
+
+  <!-- Repeat similar blocks for Card 2, Card 3, and Card 4 -->
+
+  <!-- Why Choose Content Section -->
+  <h2>Why Choose Content</h2>
+  <div class="form-group">
+    <label for="whyChooseContentTitle">Why Choose Title</label>
+    <input type="text" id="whyChooseContentTitle" name="whyChooseContent[0].title" placeholder="Who We Are">
+  </div>
+  <div class="form-group">
+    <label for="whyChooseContentDescription">Why Choose Description</label>
+    <textarea id="whyChooseContentDescription" name="whyChooseContent[0].description" rows="3" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></textarea>
+  </div>
+  <div class="form-group">
+    <label for="whyChooseContentList">Why Choose List Items (comma-separated)</label>
+    <input type="text" id="whyChooseContentList" name="whyChooseContent[1].listItems" placeholder="Item 1,Item 2,Item 3">
+  </div>
+
+  <!-- Emergency Number -->
+  <h2>Emergency Number</h2>
+  <div class="form-group">
+    <label for="emergencyNumber">Emergency Number</label>
+    <input type="text" id="emergencyNumber" name="emergencyNumber" placeholder="+919843483083">
+  </div>
+
+  <!-- Portfolio Slider -->
+  <h2>Portfolio Slider</h2>
+  <div class="form-group">
+    <label for="portfolioSliderImage1">Slide 1 Image</label>
+    <input type="text" id="portfolioSliderImage1" name="portfolioSlider[0].image" placeholder="img/pf1.jpg">
+  </div>
+  <div class="form-group">
+    <label for="portfolioSliderTitle1">Slide 1 Title</label>
+    <input type="text" id="portfolioSliderTitle1" name="portfolioSlider[0].title" placeholder="Portfolio Item 1">
+  </div>
+
+  <!-- Repeat similar blocks for Slide 2, Slide 3, and Slide 4 -->
+
+  <!-- Services Cards -->
+  <h2>Services Cards</h2>
+  <div class="form-group">
+    <label for="servicesCardIcon1">Card 1 Icon</label>
+    <input type="text" id="servicesCardIcon1" name="servicesCards[0].icon" placeholder="icofont-prescription">
+  </div>
+  <div class="form-group">
+    <label for="servicesCardTitle1">Card 1 Title</label>
+    <input type="text" id="servicesCardTitle1" name="servicesCards[0].title" placeholder="General Treatment">
+  </div>
+  <div class="form-group">
+    <label for="servicesCardDesc1">Card 1 Description</label>
+    <textarea id="servicesCardDesc1" name="servicesCards[0].description" rows="3" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></textarea>
+  </div>
+
+  <!-- Repeat similar blocks for Card 2 and Card 3 -->
+
+  <!-- Pricing Cards -->
+  <h2>Pricing Cards</h2>
+  <div class="form-group">
+    <label for="pricingCardIcon1">Card 1 Icon</label>
+    <input type="text" id="pricingCardIcon1" name="pricingCards[0].icon" placeholder="icofont-ui-cut">
+  </div>
+  <div class="form-group">
+    <label for="pricingCardTitle1">Card 1 Title</label>
+    <input type="text" id="pricingCardTitle1" name="pricingCards[0].title" placeholder="Plastic Surgery">
+  </div>
+  <div class="form-group">
+    <label for="pricingCardPrice1">Card 1 Price</label>
+    <input type="text" id="pricingCardPrice1" name="pricingCards[0].price" placeholder="$199">
+  </div>
+  <div class="form-group">
+    <label for="pricingCardFeature1">Card 1 Feature 1</label>
+    <input type="text" id="pricingCardFeature1" name="pricingCards[0].features[0]" placeholder="Lorem ipsum dolor sit">
+  </div>
+  <div class="form-group">
+    <label for="pricingCardFeature2">Card 1 Feature 2</label>
+    <input type="text" id="pricingCardFeature2" name="pricingCards[0].features[1]" placeholder="Cubitur sollicitudin fentum">
+  </div>
+
+  <!-- Repeat similar blocks for Card 2 and Card 3 -->
+
+  <!-- Blog Cards -->
+  <h2>Blog Cards</h2>
+  <div class="form-group">
+    <label for="blogCardImage1">Card 1 Image</label>
+    <input type="text" id="blogCardImage1" name="blogCards[0].image" placeholder="img/blog1.jpg">
+  </div>
+  <div class="form-group">
+    <label for="blogCardTitle1">Card 1 Title</label>
+    <input type="text" id="blogCardTitle1" name="blogCards[0].title" placeholder="We have announced our new product.">
+  </div>
+  <div class="form-group">
+    <label for="blogCardDate1">Card 1 Date</label>
+    <input type="date" id="blogCardDate1" name="blogCards[0].date" placeholder="22 Aug, 2020">
+  </div>
+  <div class="form-group">
+    <label for="blogCardDesc1">Card 1 Description</label>
+    <textarea id="blogCardDesc1" name="blogCards[0].description" rows="3" placeholder="Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed."></textarea>
+  </div>
+
+  <!-- Repeat similar blocks for Card 2 and Card 3 -->
+
+  <!-- Clients Logos -->
+  <h2>Clients Logos</h2>
+  <div class="form-group">
+    <label for="clientsLogos">Clients Logos (comma-separated)</label>
+    <input type="text" id="clientsLogos" name="clientsLogos" placeholder="img/client1.png,img/client2.png">
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+  document.getElementById('dataForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const formData = new FormData(this);
+
+    const jsonData = {};
+    formData.forEach((value, key) => {
+      if (key.includes('.')) {
+        const [parentKey, childKey] = key.split('.');
+        if (!jsonData[parentKey]) {
+          jsonData[parentKey] = [];
+        }
+        jsonData[parentKey].push({ [childKey]: value });
+      } else {
+        jsonData[key] = value;
+      }
+    });
+
+    console.log(JSON.stringify(jsonData, null, 2)); // Output the collected data as JSON
+  });
+</script>
+
+</body>
+</html>

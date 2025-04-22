@@ -1,0 +1,43 @@
+{
+    "topLinks": [
+      { "title": "About", "url": "#" },
+      { "title": "Doctors", "url": "#" },
+      { "title": "Contact", "url": "#" },
+      { "title": "FAQ", "url": "#" }
+    ],
+    "contactInfo": {
+      "phone": "9940206726",
+      "email": "cancopierservices@gmail.com"
+    },
+    "logo": "img/nav-logo.png",
+    "menu": [
+      {
+        "title": "Home",
+        "url": "#",
+        "dropdown": [
+          { "title": "Home Page 1", "url": "index.html" }
+        ]
+      },
+      { "title": "Doctors", "url": "#" },
+      { "title": "Services", "url": "#" },
+      {
+        "title": "Pages",
+        "url": "#",
+        "dropdown": [
+          { "title": "404 Error", "url": "404.html" }
+        ]
+      },
+      {
+        "title": "Blogs",
+        "url": "#",
+        "dropdown": [
+          { "title": "Blog Details", "url": "blog-single.html" }
+        ]
+      },
+      { "title": "Contact Us", "url": "contact.html" }
+    ],
+    "appointment": {
+      "text": "Book Appointment",
+      "url": "appointment.html"
+    }
+  }

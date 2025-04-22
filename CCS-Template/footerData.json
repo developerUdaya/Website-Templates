@@ -1,0 +1,38 @@
+{
+  "about": {
+    "title": "About Us",
+    "description": "Can Copier Services are leaders in providing the best solution for your Photocopiers need. We are Selling, Servicing, Renting & AMC at customer satisfaction over 10 years.",
+    "socialLinks": [
+      { "icon": "fab fa-facebook-f", "url": "#" },
+      { "icon": "fab fa-google-plus-g", "url": "#" },
+      { "icon": "fab fa-twitter", "url": "#" },
+      { "icon": "fab fa-vimeo-v", "url": "#" },
+      { "icon": "fab fa-pinterest", "url": "#" }
+    ]
+  },
+  "quickLinks": [
+    { "title": "Home", "url": "#" },
+    { "title": "About Us", "url": "#" },
+    { "title": "Services", "url": "#" },
+    { "title": "Our Cases", "url": "#" },
+    { "title": "Contact Us", "url": "#" }
+  ],
+  "openHours": {
+    "title": "Open Hours",
+    "description": "We are available to assist you during the following hours:",
+    "hours": [
+      { "day": "Monday - Friday", "time": "8:00 AM - 8:00 PM" },
+      { "day": "Saturday", "time": "9:00 AM - 6:30 PM" },
+      { "day": "Sunday", "time": "Closed" }
+    ]
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "description": "Subscribe to our newsletter for the latest updates and special offers."
+  },
+  "copyright": {
+    "text": "© {year} | All Rights Reserved by",
+    "url": "https://yourwebsite.com",
+    "name": "YourWebsite"
+  }
+}
