@@ -1,10 +1,7 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const helpText = document.querySelector(".help-text");
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+};
 
-    helpText.addEventListener("click", function () {
-        window.open("file:///E:/JustVy/task_25/task.html", "_blank");
-    });
-});
 
 document.addEventListener("DOMContentLoaded", function () {
     const trackOrderLink = document.getElementById("trackOrderLink");
@@ -96,9 +93,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function positionOutputBox() {
         const rect = dropdowns.getBoundingClientRect();
-        outputBox.style.top = `${rect.bottom + 5}px`;
-        outputBox.style.left = `${rect.left}px`;
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+    
+        outputBox.style.top = `${rect.bottom + scrollTop + 5}px`;
+        outputBox.style.left = `${rect.left + scrollLeft}px`;
     }
+    
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -117,21 +118,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener("click", function (event) {
         if (!sidePanel.contains(event.target) && !menuButton.contains(event.target)) {
             sidePanel.classList.remove("active");
-        }
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const navbar = document.querySelector(".navbar");
-    const stakeholderSection = document.querySelector(".stakeholder-section");
-
-    window.addEventListener("scroll", function () {
-        const stakeholderTop = stakeholderSection.getBoundingClientRect().top;
-        
-        if (stakeholderTop <= 0) {
-            navbar.classList.add("sticky-nav");
-        } else {
-            navbar.classList.remove("sticky-nav");
         }
     });
 });
