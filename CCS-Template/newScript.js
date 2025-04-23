@@ -126,8 +126,8 @@ const data = {
         { "image": "img/product-6.png", "details_link": "/" }
     ],
     servicesData: [
-        { "icon": "icofont-ui-user", "title": "Ramesh", "details_link": "#", "description": "We are happy to associated with Lakshmi Copier solutions pvt ltd for past 7 years based on their customer support, prompt service and quality prints all time. Their solution has resulted in cost savings upto 30 % we are very happy to having business relationship with you." },
-        { "icon": "icofont-thumbs-up", "title": "Jerome", "details_link": "#", "description": "An excellent service for our Machines (xerox). Every output is Evergreen Quality. I really impressed for Lakshmi copier Solutions support and thanking Everyone. Will Recommend Lakshmi copier solution for all your Xerox machine sales, service, rental and AMC support" },
+        { "icon": "icofont-ui-user", "title": "Ramesh", "details_link": "#", "description": "We are happy to associated with Can Copier Services pvt ltd for past 7 years based on their customer support, prompt service and quality prints all time. Their solution has resulted in cost savings upto 30 % we are very happy to having business relationship with you." },
+        { "icon": "icofont-thumbs-up", "title": "Jerome", "details_link": "#", "description": "An excellent service for our Machines (xerox). Every output is Evergreen Quality. I really impressed for Can Copier Services support and thanking Everyone. Will Recommend Can Copier Services for all your Xerox machine sales, service, rental and AMC support" },
         { "icon": "icofont-star", "title": "Ali", "details_link": "#", "description": "If you're planning to buy or rent a photo copier machine, then do approach them. Cause their service is the best in the town. They also provide you with the utmost professional help in case you are confused with your choice. Best Photocopier dealers in Chennai." },
     ],
     pricingData: [
@@ -219,7 +219,7 @@ const data = {
         copyright: {
             year: new Date().getFullYear(),
             text: "All Rights Reserved by",
-            link: { url: "https://yourwebsite.com", text: "Lakshimi Copier Solution" }
+            link: { url: "https://yourwebsite.com", text: "Can Copier Services" }
         }
     }
 
