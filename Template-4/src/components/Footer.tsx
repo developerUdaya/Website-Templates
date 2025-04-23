@@ -42,11 +42,11 @@ const Footer = () => {
 
           <div className="grid grid-cols-2 gap-2 md:gap-8">
             <div className="flex flex-col items-center md:items-start space-y-2">
+              <Link href="/" className="hover:opacity-80 text-base">Home</Link>
               <Link href="/about-dlc" className="hover:opacity-80 text-base">About</Link>
               <Link href="/our-worlds" className="hover:opacity-80 text-base">Our Worlds</Link>
               <Link href="/experiences" className="hover:opacity-80 text-base">Experiences</Link>
               <Link href="/gallery" className="hover:opacity-80 text-base">Gallery</Link>
-              <Link href="#" className="hover:opacity-80 text-base">Real Estate</Link>
             </div>
             <div className="flex flex-col items-center md:items-start space-y-2">
               <Link href="#" className="hover:opacity-80 text-base">Foundation</Link>
