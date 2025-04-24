@@ -57,17 +57,26 @@ const DestinationsGrid = ({
   const handleArrowClick = (dir: 'left' | 'right') => {
     const el = scrollRef.current;
     if (!el) return;
-
+  
     isArrowClickedRef.current = true;
     const amount = dir === 'left' ? -400 : 400;
-
+  
     el.scrollBy({ left: amount, behavior: 'smooth' });
-
+  
     setTimeout(() => {
+      if (!el) return;
+  
+      if (el.scrollLeft >= el.scrollWidth * 2 / 3) {
+        el.scrollLeft = el.scrollWidth / 3;
+      }
+      if (el.scrollLeft <= 0) {
+        el.scrollLeft = el.scrollWidth / 3;
+      }
+  
       isArrowClickedRef.current = false;
     }, 600);
   };
-
+  
   return (
     <section className="pt-0 pb-0 bg-white relative">
       <div className="container mx-auto px-4 md:px-8">
