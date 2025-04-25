@@ -6,12 +6,12 @@ const data = {
     ],
     contactInfo: [
         { icon: "fa-phone", text: "9940206726" },
-        { icon: "fa-envelope", text: "cancopierservices@gmail.com", href: "mailto:cancopierservices@gmail.com" }
+        { icon: "fa-envelope", text: "printnpay@gmail.com", href: "mailto:printnpay@gmail.com" }
     ],
     sliderData: [
         {
             image: "img/slider-img2.jpg",
-            title: "Can Copier Services</span>",
+            title: "PrintnPay",
             description: "SALES, SERVICE & RENTAL <br> NO 1 XEROX MACHINE DEALER IN CHENNAI",
             buttons: [
                 { text: "Learn More", href: "#", class: "btn primary" }
@@ -19,7 +19,7 @@ const data = {
         },
         {
             image: "img/slider-img.jpg",
-            title: "Can Copier Services",
+            title: "PrintnPay",
             description: "SALES, SERVICE & RENTAL <br> NO 1 XEROX MACHINE DEALER IN CHENNAI",
             buttons: [
                 { text: "About Us", href: "#", class: "btn primary" }
@@ -27,7 +27,7 @@ const data = {
         },
         {
             image: "img/slider-img2.jpg",
-            title: "Can Copier Services</span>",
+            title: "PrintnPay",
             description: "SALES, SERVICE & RENTAL <br> NO 1 XEROX MACHINE DEALER IN CHENNAI",
             buttons: [
                 { text: "Contact Now", href: "#", class: "btn primary" }
@@ -45,7 +45,7 @@ const data = {
         {
             category: "",
             title: "90% Customer Retention Rate",
-            description: "Can Copier Services has never failed to satisfy its customers with its after sale service. With a retention rate of 90%, we are the no 1 Xerox machine dealers in Chennai.",
+            description: "PrintnPay has never failed to satisfy its customers with its after sale service. With a retention rate of 90%, we are the no 1 Xerox machine dealers in Chennai.",
             link: "#",
             linkText: "LEARN MORE"
         },
@@ -71,7 +71,7 @@ const data = {
         {
             icon: "icofont-handshake-deal",
             title: "Rental AMC",
-            description: "Can Copier Services is the reputed Xerox machine dealers offering photocopier Xerox machine rental in Chennai. No Investment, No Deposit, No Hidden Charges"
+            description: "PrintnPay is the reputed Xerox machine dealers offering photocopier Xerox machine rental in Chennai. No Investment, No Deposit, No Hidden Charges"
         }
     ],
     funFactsData: [
@@ -82,13 +82,13 @@ const data = {
     ],
     whyChooseData: {
         title:" Why should you choose us",
-        description: "At Can Copier Services, we always believe that on time support & customer satisfaction is the key to success. We will that our company will offer high quality products and excellent support that our clients receive great value on their investment.",
+        description: "At PrintnPay, we always believe that on time support & customer satisfaction is the key to success. We will that our company will offer high quality products and excellent support that our clients receive great value on their investment.",
         image: "img/section-img.png",
         whoWeAre: {
             title: "Who We Are",
             paragraphs: [
-                "Can Copier Services is No 1 Xerox machine dealers in Chennai offering photocopier Sales, Service, Rental and AMC. We are the leading distributor and supplier photocopiers from leading brands like Konica Minolta, HP, Xerox, Sharp, Kyocera, Canon Photocopier Dealers in Chennai, Tamilnadu. Can Copier Services is built on a foundation of trust, superior quality standards, excellent before & after sales support and customer focus.",
-                "Can Copier Services is well equipped to meet to meet all the business requirements of our clients. Our portfolio of photocopiers (Xerox Machine), gives our clients the choice to select the copier best suited to their business or commercial needs. We offer the best alternative to buying a Xerox machine by renting latest Xerox machine wholesale dealers in chennai from leading brands."
+                "PrintnPay is No 1 Xerox machine dealers in Chennai offering photocopier Sales, Service, Rental and AMC. We are the leading distributor and supplier photocopiers from leading brands like Konica Minolta, HP, Xerox, Sharp, Kyocera, Canon Photocopier Dealers in Chennai, Tamilnadu. PrintnPay is built on a foundation of trust, superior quality standards, excellent before & after sales support and customer focus.",
+                "PrintnPay is well equipped to meet to meet all the business requirements of our clients. Our portfolio of photocopiers (Xerox Machine), gives our clients the choice to select the copier best suited to their business or commercial needs. We offer the best alternative to buying a Xerox machine by renting latest Xerox machine wholesale dealers in chennai from leading brands."
             ],
             listItems1: [
                 "Fast & Reliable Printing",
@@ -126,8 +126,8 @@ const data = {
         { "image": "img/product-6.png", "details_link": "/" }
     ],
     servicesData: [
-        { "icon": "icofont-ui-user", "title": "Ramesh", "details_link": "#", "description": "We are happy to associated with Can Copier Services pvt ltd for past 7 years based on their customer support, prompt service and quality prints all time. Their solution has resulted in cost savings upto 30 % we are very happy to having business relationship with you." },
-        { "icon": "icofont-thumbs-up", "title": "Jerome", "details_link": "#", "description": "An excellent service for our Machines (xerox). Every output is Evergreen Quality. I really impressed for Can Copier Services support and thanking Everyone. Will Recommend Can Copier Services for all your Xerox machine sales, service, rental and AMC support" },
+        { "icon": "icofont-ui-user", "title": "Ramesh", "details_link": "#", "description": "We are happy to associated with PrintnPay for past 7 years based on their customer support, prompt service and quality prints all time. Their solution has resulted in cost savings upto 30 % we are very happy to having business relationship with you." },
+        { "icon": "icofont-thumbs-up", "title": "Jerome", "details_link": "#", "description": "An excellent service for our Machines (xerox). Every output is Evergreen Quality. I really impressed for PrintnPay support and thanking Everyone. Will Recommend PrintnPay for all your Xerox machine sales, service, rental and AMC support" },
         { "icon": "icofont-star", "title": "Ali", "details_link": "#", "description": "If you're planning to buy or rent a photo copier machine, then do approach them. Cause their service is the best in the town. They also provide you with the utmost professional help in case you are confused with your choice. Best Photocopier dealers in Chennai." },
     ],
     pricingData: [
@@ -184,7 +184,7 @@ const data = {
     footerData: {
         about: {
             title: "About Us",
-            description: "Can Copier Services are leaders in providing the best solution for your Photocopiers need. We are Selling, Servicing, Renting & AMC at customer satisfaction over 10 years.",
+            description: "PrintnPay are leaders in providing the best solution for your Photocopiers need. We are Selling, Servicing, Renting & AMC at customer satisfaction over 10 years.",
             socialLinks: [
                 { icon: "fa fa-facebook-f", url: "#" },
                 { icon: "fa fa-google-plus", url: "#" },
@@ -219,7 +219,7 @@ const data = {
         copyright: {
             year: new Date().getFullYear(),
             text: "All Rights Reserved by",
-            link: { url: "https://yourwebsite.com", text: "Can Copier Services" }
+            link: { url: "https://yourwebsite.com", text: "PrintnPay" }
         }
     }
 

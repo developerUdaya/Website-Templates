@@ -10,7 +10,7 @@
     "contactInfo": [
         { "icon": "fa-phone", "text": "+919843483083"
         },
-        { "icon": "fa-envelope", "text": "cancopierservices@gmail.com", "href": "mailto:cancopierservices@gmail.com"
+        { "icon": "fa-envelope", "text": "printnpay@gmail.com", "href": "mailto:printnpay@gmail.com"
         }
     ],
     "sliderData": [
@@ -308,7 +308,7 @@
     "aboutUsData": {
         "about": {
             "title": "About Us",
-            "description": "Can Copier Services are leaders in providing the best solution for your Photocopiers need. We are Selling, Servicing, Renting & AMC at customer satisfaction over 10 years.",
+            "description": "PrintnPay are leaders in providing the best solution for your Photocopiers need. We are Selling, Servicing, Renting & AMC at customer satisfaction over 10 years.",
             "socialLinks": [
                 {
                     "icon": "fab fa-facebook-f",
