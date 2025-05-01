@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom font definitions */
+@font-face {
+  font-family: 'MessinaSansWeb-Regular';
+  src: url('/fonts/MessinaSansWeb-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MessinaSansWeb-SemiBold';
+  src: url('/fonts/MessinaSansWeb-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GT-Sectra-Display-Light';
+  src: url('/fonts/GT-Sectra-Display-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GT-Sectra-Display-Light-Italic';
+  src: url('/fonts/GT-Sectra-Display-Light-Italic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    /* Discovery Land Theme Colors */
+    --background: 40 33% 98%; /* light cream background */
+    --foreground: 0 0% 7%; /* near black text */
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 7%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 7%;
+
+    --primary: 204 27% 24%; /* navy blue */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 42 34% 65%; /* gold accent */
+    --secondary-foreground: 0 0% 7%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 8% 46%;
+
+    --accent: 167 47% 51%; /* teal accent */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 204 27% 24%;
+
+    --radius: 0rem;
+  }
+
+  .dark {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 204 27% 24%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 42 34% 65%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 240 5% 65%;
+
+    --accent: 167 47% 51%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: 240 5% 84%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html, body {
+    @apply bg-background text-foreground;
+    font-family: 'MessinaSansWeb-Regular', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'GT-Sectra-Display-Light', serif;
+  }
+
+  .italic-heading {
+    font-family: 'GT-Sectra-Display-Light-Italic', serif;
+  }
+
+  .semi-bold {
+    font-family: 'MessinaSansWeb-SemiBold', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll-snap-align-start {
+  scroll-snap-align: start;
+}
+.scroll-snap-type-x-mandatory {
+  scroll-snap-type: x mandatory;
+}
+
+.no-scroll {
+  overflow: hidden !important;
+  height: 100vh;
+  touch-action: none;
+}
