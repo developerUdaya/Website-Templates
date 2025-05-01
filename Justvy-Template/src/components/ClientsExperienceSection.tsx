@@ -10,21 +10,21 @@ const testimonials = [
     id: 1,
     name: 'Person 1',
     position: 'Product Manager, InnovateTech',
-    imageSrc: '/image/review-1.png',
+    imageSrc: '/images/review-1.png',
     content: `“Working with Justvy has been a game-changer. Their on-time completion and exceptional quality consistently exceed expectations. Highly recommended for reliable and innovative solutions!”`
   },
   {
     id: 2,
     name: 'Person 2',
     position: 'Software Engineer, CodeWorks',
-    imageSrc: '/image/review-2.png',
+    imageSrc: '/images/review-2.png',
     content: `“They made our software much easier to manage. Everything runs smoother now, saving us time and effort. We’re really happy with how everything turned out!”`
   },
   {
     id: 3,
     name: 'Person 3',
     position: 'CTO, TechCorp',
-    imageSrc: '/image/review-3.png',
+    imageSrc: '/images/review-3.png',
     content: `“JustVy has transformed our business. Their energetic team brings new ideas and offers 24/7 support, keeping us covered at all times. Their dedication and skill have truly exceeded our expectations”`
   }
 ];
