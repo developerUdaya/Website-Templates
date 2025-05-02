@@ -112,18 +112,14 @@ const data = {
         ]
     },
     portfolioData: [
-        { "image": "img/product-1.png", "details_link": "/" },
-        { "image": "img/product-2.png", "details_link": "/" },
-        { "image": "img/product-3.png", "details_link": "/" },
-        { "image": "img/product-4.png", "details_link": "/" },
-        { "image": "img/product-5.png", "details_link": "/" },
-        { "image": "img/product-6.png", "details_link": "/" },
-        { "image": "img/product-1.png", "details_link": "/" },
-        { "image": "img/product-2.png", "details_link": "/" },
-        { "image": "img/product-3.png", "details_link": "/" },
-        { "image": "img/product-4.png", "details_link": "/" },
-        { "image": "img/product-5.png", "details_link": "/" },
-        { "image": "img/product-6.png", "details_link": "/" }
+        { image: "img/machine-1.jpg", details_link: "/", caption: "Canon 3226" },
+        { image: "img/machine-2.jpg", details_link: "/", caption: "HP 4104" },
+        { image: "img/machine-3.jpg", details_link: "/", caption: "Kyocera 2040" },
+        { image: "img/machine-4.jpg", details_link: "/", caption: "Kyocera 3212" },
+        { image: "img/machine-1.jpg", details_link: "/", caption: "Canon 3226" },
+        { image: "img/machine-2.jpg", details_link: "/", caption: "HP 4104" },
+        { image: "img/machine-3.jpg", details_link: "/", caption: "Kyocera 2040" },
+        { image: "img/machine-4.jpg", details_link: "/", caption: "Kyocera 3212" }
     ],
     servicesData: [
         { "icon": "icofont-ui-user", "title": "Ramesh", "details_link": "#", "description": "We are happy to associated with PrintnPay for past 7 years based on their customer support, prompt service and quality prints all time. Their solution has resulted in cost savings upto 30 % we are very happy to having business relationship with you." },
@@ -133,11 +129,11 @@ const data = {
     pricingData: [
         {
             title: "BASIC PLAN",
-            price: "₹2,000",
+            price: "₹3,000",
             duration: "/ per Month",
             features: [
                 "Xerox Machine Rental",
-                "Monthly Print Quota (5,000 pages)",
+                "Monthly Print Quota (4,000 pages)",
                 "Basic Service Support",
                 "Installation & Setup",
                 "Annual Maintenance Contract (AMC)"
@@ -146,11 +142,11 @@ const data = {
         },
         {
             title: "STANDARD PLAN",
-            price: "₹3,500",
+            price: "₹4,000",
             duration: "/ per Month",
             features: [
                 "Xerox Machine Rental",
-                "Monthly Print Quota (10,000 pages)",
+                "Monthly Print Quota (8,000 pages)",
                 "Basic Service Support",
                 "Installation & Setup",
                 "Annual Maintenance Contract (AMC)"
@@ -159,11 +155,11 @@ const data = {
         },
         {
             title: "PREMIUM PLAN",
-            price: "₹5,000",
+            price: "₹6,000",
             duration: "/ per Month",
             features: [
                 "Xerox Machine Rental",
-                "Monthly Print Quota (Unlimited*)",
+                "Monthly Print Quota (12,000 pages)",
                 "Basic Service Support",
                 "Installation & Setup",
                 "Annual Maintenance Contract (AMC)"
@@ -602,8 +598,11 @@ data.portfolioData.forEach(item => {
     const portfolioItem = document.createElement("div");
     portfolioItem.classList.add("single-pf");
     portfolioItem.innerHTML = `
-    <img src="${item.image}" alt = "Portfolio Image" >
-        <a href="${item.details_link}" class="btn">View Details</a>
+    <div class="image-wrapper">
+        <img src="${item.image}" alt = "Portfolio Image" >
+        <p class="pf-caption">${item.caption}</p>
+    </div>
+    <a href="${item.details_link}" class="btn">View Details</a>
 `;
     portfolioSlider.appendChild(portfolioItem);
 });
@@ -659,7 +658,6 @@ data.pricingData.forEach(plan => {
     `;
     pricingContainer.appendChild(pricingItem);
 });
-
 
 
 // Select the container
@@ -770,4 +768,3 @@ $(document).ready(function () {
 document.addEventListener("DOMContentLoaded", function () {
 
 });
-

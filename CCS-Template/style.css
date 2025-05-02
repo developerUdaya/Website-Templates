@@ -1330,13 +1330,24 @@ body {
 
 .portfolio .single-pf {
 	position: relative;
+	min-height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
 }
-
 .portfolio .single-pf img {
-	height: 100%;
-	width: 100%;
+	max-height: 100%;
+  	max-width: 100%;
+  	object-fit: contain;
 }
-
+.portfolio .pf-caption {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 18px;
+	color: black;
+	font-weight: bold;
+}
 .portfolio .single-pf:before {
 	position: absolute;
 	content: "";
