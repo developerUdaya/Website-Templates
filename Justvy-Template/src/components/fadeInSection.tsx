@@ -17,7 +17,7 @@ const childVariants: Variants = {
 };
 
 export default function FadeInSection({ children }: { children: ReactNode }) {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.9 });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.95 });
 
   const wrappedChildren = Array.isArray(children)
     ? children

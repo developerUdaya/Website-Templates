@@ -7,8 +7,9 @@ const AboutUsTextSection = () => {
       <div className="max-w-5xl mx-auto">
       <FadeInSection>
         <p className="text-2xl md:text-3xl lg:text-4xl leading-relaxed text-black">
-          At <span className="italic font-semibold">JustVy</span>, we are driven by a simple belief — innovation should be purposeful, scalable, and human-centered.<br /> 
-          We specialize in delivering high-impact digital solutions <br/> that empower businesses to grow and adapt in a rapidly evolving world.
+          At <span className="italic font-semibold">JustVy</span>, we bring all your business needs into one place 
+          with cutting-edge technology and intelligent automation. From streamlining operations to boosting 
+          productivity, our solutions are designed to drive innovation and growth across your organization.
         </p>
       </FadeInSection> 
       </div>

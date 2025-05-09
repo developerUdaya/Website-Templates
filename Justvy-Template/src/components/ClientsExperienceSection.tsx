@@ -8,21 +8,21 @@ import { motion, useAnimation } from 'framer-motion';
 const testimonials = [
   {
     id: 1,
-    name: 'Person 1',
+    name: 'Arun Prakash',
     position: 'Product Manager, InnovateTech',
     imageSrc: '/images/review-1.png',
     content: `“Working with Justvy has been a game-changer. Their on-time completion and exceptional quality consistently exceed expectations. Highly recommended for reliable and innovative solutions!”`
   },
   {
     id: 2,
-    name: 'Person 2',
+    name: 'Karthik Subramanian',
     position: 'Software Engineer, CodeWorks',
     imageSrc: '/images/review-2.png',
     content: `“They made our software much easier to manage. Everything runs smoother now, saving us time and effort. We’re really happy with how everything turned out!”`
   },
   {
     id: 3,
-    name: 'Person 3',
+    name: 'Vignesh Chandrasekar',
     position: 'CTO, TechCorp',
     imageSrc: '/images/review-3.png',
     content: `“JustVy has transformed our business. Their energetic team brings new ideas and offers 24/7 support, keeping us covered at all times. Their dedication and skill have truly exceeded our expectations”`
@@ -45,22 +45,33 @@ const charVariant = {
 const renderAnimatedText = (
   text: string,
   controls: ReturnType<typeof useAnimation>
-) => (
-  <span className="inline-block">
-    {[...text].map((char, i) => (
-      <motion.span
-        key={i}
-        custom={i}
-        initial="hidden"
-        animate={controls}
-        variants={charVariant}
-        className="inline-block"
-      >
-        {char === ' ' ? '\u00A0' : char}
-      </motion.span>
-    ))}
-  </span>
-);
+) => {
+  const words = text.split(' ');
+
+  return (
+    <span className="inline-block">
+      {words.map((word, wordIndex) => (
+        <span key={wordIndex} className="inline-block whitespace-nowrap mr-2">
+          {[...word].map((char, charIndex) => {
+            const i = wordIndex * 10 + charIndex;
+            return (
+              <motion.span
+                key={i}
+                custom={i}
+                initial="hidden"
+                animate={controls}
+                variants={charVariant}
+                className="inline-block"
+              >
+                {char}
+              </motion.span>
+            );
+          })}
+        </span>
+      ))}
+    </span>
+  );
+};
 
 interface ClientsExperienceSectionProps {
   title?: string;
@@ -207,8 +218,8 @@ const ClientsExperienceSection = ({
   return (
     <section ref={sectionRef} className="py-20 bg-white relative">
       <div className="container mx-auto px-4 md:px-8">
-        <div className="mb-12 md:mb-16 flex items-end justify-between pl-4 md:pl-12 pr-4 md:pr-12">
-            <h2 className="text-3xl md:text-4xl">
+        <div className="mb-12 md:mb-16 flex items-end justify-between pl-2 lg:pl-12 pr-2 lg:pr-12">
+            <h2 className="text-2xl md:text-4xl">
               <span className="italic-heading block pb-2">
                 {renderAnimatedText(title, controls1)}
               </span>

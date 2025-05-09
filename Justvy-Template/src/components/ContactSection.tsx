@@ -4,53 +4,64 @@ import { FaPhoneAlt, FaEnvelope, FaGlobe, FaMapMarkerAlt, FaInstagram, FaLinkedi
 
 const ContactSection = () => {
   return (
-    <section id="next-section" className="bg-[#f2f2f2] py-20 px-6 md:px-0">
+    <section id="next-section" className="bg-[#f2f2f2] py-12 md:py-20 px-6 md:px-2">
       <div className="flex flex-col md:flex-row gap-0">
-        <div className="w-full md:w-[50%] px-6 md:px-20 mb-10 md:mb-0">
-          <h2 className="text-4xl font-bold pt-4 mb-8">Get In Touch</h2>
-          
+        <div className="w-full md:w-[70%] lg:w-[40%] px-6 md:px-10 mb-10 md:mb-0">
+          <h2 className="text-4xl font-bold text-center md:text-left pt-4 mb-8">Get In Touch</h2>
+  
           <div className="space-y-6 text-base text-black w-full">
-            <div className="flex flex-col lg:flex-row lg:items-start items-center gap-2 lg:gap-4">
-              <FaPhoneAlt className="text-black text-2xl mt-1" />
+          <div className="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-2 md:gap-4">
+              <div className="w-8 flex justify-center pt-0 md:pt-3">
+                <FaPhoneAlt className="text-black text-2xl" />
+              </div>
               <div className="text-center md:text-left">
-                <h4 className="font-semibold">Phone Number</h4>
-                <a href="tel:+919677758128">+91 9677758128</a>
+                <h4 className="text-lg font-semibold">Phone Number</h4>
+                <a className="text-gray-700" href="tel:+919677758128">+91 9677758128</a>
               </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:items-start items-center gap-2 lg:gap-4">
-              <FaEnvelope className="text-black text-2xl mt-1" />
-              <div className="text-center lg:text-left">
-                <h4 className="font-semibold">Email</h4>
-                <a href="mailto:info@justvy.in">info@justvy.in</a>
+            <div className="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-2 md:gap-4">
+              <div className="w-8 flex justify-center pt-0 md:pt-3">
+                <FaEnvelope className="text-black text-2xl" />
+              </div>
+              <div className="text-center md:text-left">
+                <h4 className="text-lg font-semibold">Email</h4>
+                <a className="text-gray-700" href="mailto:info@justvy.in">info@justvy.in</a>
               </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:items-start items-center gap-2 lg:gap-4">
-              <FaMapMarkerAlt className="text-black text-2xl mt-1" />
-              <div className="text-center lg:text-left">
-                <h4 className="font-semibold">Location</h4>
+            <div className="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-2 md:gap-6">
+              <div className="w-8 flex justify-center pt-0 md:pt-4">
+                <FaMapMarkerAlt className="text-black text-2xl" />
+              </div>
+              <div className="text-center md:text-left">
+                <h4 className="text-lg font-semibold">Location</h4>
                 <a
+                  className="text-gray-700"
                   href="https://maps.app.goo.gl/VJat4P2nkWMziJ1P6"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  358G+RGH, Mulakalacheru, Golden George Nagar, Mogappair West, 
-                  Maduravoyal, Chennai, Tamil Nadu 600107
+                  Devapragasam Trade Centre, <br /> 
+                  Wing, 3rd Floor, Madura Garden, <br />
+                  Maduravayol , Chennai,<br />
+                  Tamil Nadu - 600095
                 </a>
               </div>
             </div>
 
-            <div className="flex items-center gap-4 flex-wrap justify-center lg:justify-start mt-6">
-              <span className="text-lg whitespace-nowrap">Follow Us On:</span>
+            <div className="flex items-center gap-4 flex-wrap justify-center md:justify-start mt-6 pl-2">
+              <span className="text-lg whitespace-nowrap">Follow us on:</span>
               <a
-                href="https://www.instagram.com/" target="_blank"
+                href="https://www.instagram.com/"
+                target="_blank"
                 className="text-black text-2xl hover:text-blue-700 transition duration-300"
               >
                 <FaInstagram />
               </a>
               <a
-                href="https://www.linkedin.com/" target="_blank"
+                href="https://www.linkedin.com/"
+                target="_blank"
                 className="text-black text-2xl hover:text-blue-700 transition duration-300"
               >
                 <FaLinkedin />
@@ -59,7 +70,7 @@ const ContactSection = () => {
           </div>
         </div>
 
-        <div className="flex h-[400px] w-full md:w-[70%] pr-0">
+        <div className="flex h-[400px] w-full md:w-[75%] lg:w-[90%] pr-0 md:pr-10">
           <div className="relative w-full h-full">
             <iframe
               title="Justvy Global Innovations LLP Location"

@@ -34,8 +34,8 @@ const LoadingScreen = () => {
           className="fixed inset-0 bg-black z-[9999] flex items-center justify-center"
         >
           <Image
-            src="/image/justvy.webp"
-            alt="JustVy Logo"
+            src="/images/logo.png"
+            alt="Justvy Logo"
             width={120}
             height={120}
             className="object-contain"

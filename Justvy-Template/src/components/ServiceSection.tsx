@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import FadeInSection from './fadeInSection';
 
@@ -7,7 +6,6 @@ interface ServiceSectionProps {
   title: string;
   text: string;
   flip?: boolean;
-  link?: string;
 }
 
 const ServiceSection = ({
@@ -15,7 +13,6 @@ const ServiceSection = ({
   title,
   text,
   flip = false,
-  link = "#"
 }: ServiceSectionProps) => {
   return (
     <section className="w-full bg-white relative px-0 pt-2 pb-20 my-0">
@@ -35,15 +32,10 @@ const ServiceSection = ({
           <div className="text-gray-700 text-base mb-6 leading-relaxed">
           <FadeInSection>{text}</FadeInSection>
           </div>
-          <Link href={link}>
-            <button className="px-6 py-2 border border-gray-800 text-gray-800 hover:bg-gray-100 transition duration-200">
-              Explore
-            </button>
-          </Link>
         </div>
       </div>
 
-      <div className="hidden md:block relative w-full min-h-[600px] md:min-h-[80vh] lg:min-h-[100vh] overflow-hidden">
+      <div className="hidden md:block relative w-full h-[80vh] max-h-[550px] overflow-hidden">
         <div className={`absolute top-0 ${flip ? 'right-0' : 'left-0'} w-full md:w-[70%] h-full`}>
           <Image
             src={imageSrc}
@@ -59,11 +51,6 @@ const ServiceSection = ({
         >
           <h2 className="text-3xl font-serif mb-4"><FadeInSection>{title}</FadeInSection></h2>
           <div className="text-gray-700 text-base mb-6 leading-relaxed"><FadeInSection>{text}</FadeInSection></div>
-          <Link href={link}>
-          <FadeInSection><button className="px-6 py-2 border border-gray-800 text-gray-800 hover:bg-gray-100 transition duration-200">
-              Explore
-            </button></FadeInSection>
-          </Link>
         </div>
       </div>
     </section>
@@ -73,51 +60,43 @@ const ServiceSection = ({
 const allServices = [
   {
     id: "1",
-    title: "WhatsApp Automation Services",
-    description: "Streamline operations and boost customer engagement with our WhatsApp Automation Services. Our bots simplify ticket and appointment booking with seamless integration and 24/7 availability, providing efficient, secure, and scalable communication across industries.",
-    imageSrc: "/images/golf-court.png",
+    title: "Web Development",
+    description: "We craft responsive, fast, and secure websites that drive engagement and business growth. Our expertise includes modern frameworks and technologies for building everything from simple landing pages to complex web applications. Every website we build is optimized for performance, SEO, and user experience.",
+    imageSrc: "/images/web.png",
     link: "/experiences",
     flip: false,
   },
   {
     id: "2",
-    title: "Native, Cross-Platform, and Hybrid Solutions",
-    description: "We develop mobile applications across Native, Cross-Platform, and Hybrid solutions, covering e-commerce, AR/VR, IoT, health and fitness, education, entertainment, and productivity. Our apps prioritize innovation and user-friendliness for Android, iOS, and web platforms.",
-    imageSrc: "/images/beach.png",
+    title: "App Development",
+    description: "We specialize in developing high-performance mobile applications tailored to your business needs. Our team builds scalable, user-friendly apps for Android and iOS platforms. From concept to deployment, we ensure seamless functionality and intuitive UI/UX. Let us turn your ideas into powerful mobile solutions.",
+    imageSrc: "/images/app.jpg",
     link: "/experiences",
     flip: true,
   },
   {
     id: "3",
-    title: "Diverse Website Development",
-    description: "We craft diverse websites, including blogs, e-commerce platforms, online communities, specialized portals, and sites with 3D animated elements. Our expertise covers dynamic content for news, real estate, job boards, travel services, and appointment scheduling, aligned with industry needs and digital trends.",
-    imageSrc: "/images/make-up.png",
+    title: "CRM and Business Tools",
+    description: "We build powerful CRM and business automation tools designed to enhance productivity, streamline operations, and drive informed decision-making. From custom dashboards and data management systems to collaborative platforms and workflow automation, our solutions are tailored to your unique business needs.",
+    imageSrc: "/images/CRM.png",
     link: "/experiences",
     flip: false,
   },
   {
     id: "4",
-    title: "IoT Applications",
-    description: "We specialize in versatile IoT applications for Android, iOS, and web platforms, covering home automation, healthcare, smart agriculture, industrial automation, environmental monitoring, energy management, and smart transportation. Our secure, scalable solutions drive innovation in a more connected world.",
-    imageSrc: "/images/golf-court.png",
+    title: "Social Media Automation",
+    description: "Our social media automation tools help you save time, boost reach, and maintain consistent engagement across platforms. From post scheduling to analytics and reporting, we deliver smart solutions that simplify your digital marketing efforts and help you scale your brand presence effectively.",
+    imageSrc: "/images/social-media.jpg",
     link: "/experiences",
     flip: true,
   },
   {
     id: "5",
-    title: "AWS Cloud Services",
-    description: "Boost your business efficiency and scalability with Amazon Web Services (AWS). Our expertise in AWS delivers robust cloud solutions, including infrastructure management and application deployment. Whether you need to migrate, build, or scale, we ensure seamless integration, high availability, and cost-effective operations to help your business thrive.",
-    imageSrc: "/images/beach.png",
+    title: "IoT Applications",
+    description: "We specialize in versatile IoT applications for Android, iOS, and web platforms, covering home automation, healthcare, smart agriculture, industrial automation, environmental monitoring, energy management, and smart transportation. Our secure, scalable solutions drive innovation in a more connected world.",
+    imageSrc: "/images/IOT.png",
     link: "/experiences",
     flip: false,
-  },
-  {
-    id: "6",
-    title: "Google Cloud Platform (GCP) Services",
-    description: "Unlock the potential of Google Cloud Platform (GCP) with our tailored solutions. We harness GCP's tools for data analytics, machine learning, and scalable app development. Our services optimize performance, enhance security, and ensure smooth cloud migration, empowering your business to innovate and grow confidently.",
-    imageSrc: "/images/make-up.png",
-    link: "/experiences",
-    flip: true,
   }
 ];
 
@@ -130,7 +109,6 @@ const ServiceSectionsContainer = () => {
           imageSrc={item.imageSrc}
           title={item.title}
           text={item.description}
-          link={item.link}
           flip={item.flip}
         />
       ))}

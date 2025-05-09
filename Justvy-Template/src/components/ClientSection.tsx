@@ -7,38 +7,57 @@ import Link from 'next/link';
 const  clientsList = [
   {
     id: "1",
-    name: "Epi Saint-Tropez",
-    location: "Saint-Tropez, France",
-    imageSrc: "/images/destinations/epi-saint.png",
-    slug: "epi-saint-tropez"
+    name: "SportsIMS",
+    location: "Chennai",
+    imageSrc: "/images/clients/sportims.jpg",
   },
   {
     id: "2",
-    name: "Tenuta Toscana",
-    location: "Tuscany, Italy",
-    imageSrc: "/images/destinations/tuscany.png",
-    slug: "tenutatoscana"
+    name: "FT Digital Solutions",
+    location: "Chennai",
+    imageSrc: "/images/clients/fds.webp",
   },
   {
     id: "3",
-    name: "Mohala",
-    location: "Honolulu, Hawaii",
-    imageSrc: "/images/destinations/mohala.png",
-    slug: "mohala"
+    name: "MGR University",
+    location: "Chennai",
+    imageSrc: "/images/clients/mgr.png",
   },
   {
     id: "4",
-    name: "Discovery Dunes",
-    location: "Dubai South, United Arab Emirates",
-    imageSrc: "/images/destinations/discovery-dunes.png",
-    slug: "discovery-dunes"
+    name: "FTDC",
+    location: "Chennai",
+    imageSrc: "/images/clients/ftdc.png",
   },
   {
     id: "5",
-    name: "Homewood",
-    location: "Lake Tahoe, California",
-    imageSrc: "/images/destinations/homewood.png",
-    slug: "homewood"
+    name: "Wencuts",
+    location: "Chennai",
+    imageSrc: "/images/clients/wencuts.jpeg",
+  },
+  {
+    id: "6",
+    name: "BETF",
+    location: "Chennai",
+    imageSrc: "/images/clients/BETF.png",
+  },
+  {
+    id: "7",
+    name: "TNSSCA",
+    location: "Chennai",
+    imageSrc: "/images/clients/tnssca.png",
+  },
+  {
+    id: "8",
+    name: "Om Sri Tara",
+    location: "Chennai",
+    imageSrc: "/images/clients/omsritara.avif",
+  },
+  {
+    id: "9",
+    name: "AKC",
+    location: "Chennai",
+    imageSrc: "/images/clients/akc.webp",
   }
 ];
 
@@ -58,22 +77,33 @@ const charVariant = {
 const renderAnimatedText = (
   text: string,
   controls: ReturnType<typeof useAnimation>
-) => (
-  <span className="inline-block">
-    {[...text].map((char, i) => (
-      <motion.span
-        key={i}
-        custom={i}
-        initial="hidden"
-        animate={controls}
-        variants={charVariant}
-        className="inline-block"
-      >
-        {char === ' ' ? '\u00A0' : char}
-      </motion.span>
-    ))}
-  </span>
-);
+) => {
+  const words = text.split(' ');
+
+  return (
+    <span className="inline-block">
+      {words.map((word, wordIndex) => (
+        <span key={wordIndex} className="inline-block whitespace-nowrap mr-2">
+          {[...word].map((char, charIndex) => {
+            const i = wordIndex * 10 + charIndex;
+            return (
+              <motion.span
+                key={i}
+                custom={i}
+                initial="hidden"
+                animate={controls}
+                variants={charVariant}
+                className="inline-block"
+              >
+                {char}
+              </motion.span>
+            );
+          })}
+        </span>
+      ))}
+    </span>
+  );
+};
 
 interface ClientSectionProps {
   title?: string;
@@ -157,14 +187,14 @@ const ClientSection = ({
   return (
     <section ref={sectionRef} className="pt-10 pb-20 bg-white relative">
       <div className="container mx-auto px-4 md:px-8">
-        <div className="mb-16 md:mb-16 flex items-end justify-between pl-4 md:pl-12 pr-4 md:pr-12">
-          <h2 className="text-3xl md:text-4xl">
+        <div className="mb-12 md:mb-16 flex items-end justify-between pl-2 lg:pl-12 pr-2 lg:pr-12">
+          <h2 className="text-2xl md:text-4xl">
             <span className="italic-heading block pb-1">
               {renderAnimatedText(title, controls1)}
             </span>
               {renderAnimatedText(subtitle, controls2)}
           </h2>
-          <div className="flex gap-4 text-2xl">
+          <div className="flex gap-2 md:gap-4 text-2xl md:text-3xl">
             <button onClick={() => handleArrowClick('left')} className="hover:scale-110 transition">←</button>
             <button onClick={() => handleArrowClick('right')} className="hover:scale-110 transition">→</button>
           </div>
@@ -182,17 +212,17 @@ const ClientSection = ({
           }}
         >
           {loopedDestinations.map((destination, idx) => (
-            <Link
-              href={`/locations/${destination.slug}`}
+            <div
               key={`${destination.id}-${idx}`}
               className="group block w-[85vw] sm:w-[50vw] md:w-[50vw] lg:w-[360px] xl:w-[360px] h-[300px] flex-shrink-0 relative overflow-hidden shadow-lg scroll-snap-align-start"
             >
-              <div className="relative w-full h-full">
+              <div className="relative w-full h-full  flex items-center justify-center" >
                 <Image
                   src={destination.imageSrc}
                   alt={destination.name}
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  width={200}
+                  height={200}
+                  className="object-contain transition-transform duration-700 group-hover:scale-110 justify-center"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent transition-opacity duration-300" />
                 <div className="absolute bottom-0 left-0 w-full p-5 text-white">
@@ -200,7 +230,7 @@ const ClientSection = ({
                   <p className="text-sm text-gray-300">{destination.location}</p>
                 </div>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </div>

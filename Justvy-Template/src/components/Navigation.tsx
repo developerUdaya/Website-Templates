@@ -24,18 +24,18 @@ const Navigation = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${
-        scrolled ? 'bg-white py-3' : 'bg-transparent py-5'
+        scrolled ? 'bg-white py-4 shadow-md' : 'bg-transparent py-4'
       }`}
     >
       <nav className="w-full max-w-[1200px] mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-4">
 
         <Link href="/" className="flex items-center">
           <Image
-            src={scrolled ? '/image/justvy.webp' : '/image/justvy.webp'}
+            src={scrolled ? '/images/dark-logo.png' : '/images/logo.png'}
             alt="Justvy"
             width={180}
-            height={40}
-            className="h-10 w-auto"
+            height={48}
+            className="h-12 w-auto"
           />
         </Link>
 
@@ -55,14 +55,6 @@ const Navigation = () => {
             }`}
           >
             About Us
-          </Link>
-          <Link
-            href="/our-products"
-            className={`text-sm font-normal hover:opacity-70 transition-opacity ${
-              scrolled ? 'text-black' : 'text-white'
-            }`}
-          >
-            Our Products
           </Link>
           <Link
             href="/blogs"
@@ -97,54 +89,47 @@ const Navigation = () => {
           mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <div className="flex flex-col h-full p-10">
-          <div className="flex justify-between items-center mb-16">
+        <div className="flex flex-col h-full">
+          <div className="flex justify-between items-center mt-6 mb-7">
             <Image
-              src="/image/justvy.webp"
+              src="/images/logo.png"
               alt="Justvy"
               width={180}
               height={40}
-              className="h-10 w-auto"
+              className="h-12 w-auto pl-6"
             />
             <button
               onClick={toggleMobileMenu}
-              className="text-white text-4xl"
+              className="text-white text-4xl pr-10 pb-2"
             >
               ×
             </button>
           </div>
-          <div className="flex flex-col space-y-8">
+          <div className="flex flex-col space-y-6 pl-10">
           <Link
               href="/"
-              className="text-lg text-white hover:opacity-70 transition-opacity"
+              className="text-base text-white hover:opacity-70 transition-opacity"
               onClick={() => setMobileMenuOpen(false)}
             >
               Home
             </Link>
             <Link
               href="/about-us"
-              className="text-lg text-white hover:opacity-70 transition-opacity"
+              className="text-base text-white hover:opacity-70 transition-opacity"
               onClick={() => setMobileMenuOpen(false)}
             >
               About Us
             </Link>
             <Link
-              href="/our-products"
-              className="text-lg text-white hover:opacity-70 transition-opacity"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Our Products
-            </Link>
-            <Link
               href="/blogs"
-              className="text-lg text-white hover:opacity-70 transition-opacity"
+              className="text-base text-white hover:opacity-70 transition-opacity"
               onClick={() => setMobileMenuOpen(false)}
             >
               Blogs
             </Link>
             <Link
               href="/contact-us"
-              className="text-lg text-white hover:opacity-70 transition-opacity"
+              className="text-base text-white hover:opacity-70 transition-opacity"
               onClick={() => setMobileMenuOpen(false)}
             >
               Contact Us

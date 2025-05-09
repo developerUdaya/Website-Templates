@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "JustVy Global Innovations is a software company delivering custom websites, e-commerce platforms, and 3D web solutions.",
   keywords: "JustVy, JustVy Global Innovations, software development, IT solutions, web development, e-commerce platforms",
   icons: {
-    icon: "/image/justvy.webp",
+    icon: "/images/logo.png",
   },
 };
 
