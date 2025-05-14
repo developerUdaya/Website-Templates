@@ -59,8 +59,8 @@ const WelcomeSection = ({
   imageSrc,
   secondImageSrc,
   title = "Welcome to Justvy Global Innovations",
-  description = "At Justvy, we are dedicated to transforming visionary ideas into cutting-edge software solutions. Our team of expert developers and innovators collaborates to create technologies that drive progress and redefine possibilities. Experience the JustVy difference—where innovation meets excellence in the digital realm.​",
-  additionalDescription = "With a focus on agility and precision, JustVy leverages the latest technologies to build custom solutions tailored to your unique business needs. Whether you’re looking to enhance operational efficiency, improve customer experiences, or drive digital transformation, our team is committed to helping you achieve your goals. Let’s shape the future together, one innovation at a time."
+  description = "At Justvy, we are dedicated to transforming visionary ideas into cutting-edge software solutions. Our team of expert developers and innovators collaborates to create technologies that drive progress and redefine possibilities. Experience the Justvy difference—where innovation meets excellence in the digital realm.​",
+  additionalDescription = "With a focus on agility and precision, Justvy leverages the latest technologies to build custom solutions tailored to your unique business needs. Whether you’re looking to enhance operational efficiency, improve customer experiences, or drive digital transformation, our team is committed to helping you achieve your goals. Let’s shape the future together, one innovation at a time."
 }: WelcomeSectionProps) => {
     const controls1 = useAnimation();
     const controls2 = useAnimation();

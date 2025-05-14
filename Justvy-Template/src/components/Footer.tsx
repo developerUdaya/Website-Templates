@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white pt-16 pb-10">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_1.5fr_2fr] lg:grid-cols-[1fr_1.5fr_1.5fr] gap-0 md:gap-12 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_1.5fr_2fr] lg:grid-cols-[1fr_1fr_2fr] gap-0 md:gap-12 text-center md:text-left">
 
           <div className="flex justify-center md:justify-start mb-10 md:mb-0">
             <Image
@@ -25,10 +25,10 @@ const Footer = () => {
                 +91 96777 58128
               </a>
               <a
-                href="mailto:info@justvy.in"
+                href="mailto:info@Justvy.in"
                 className="hover:opacity-80"
               >
-                info@justvy.in
+                info@Justvy.in
               </a>
             </div>
             <div>
@@ -55,17 +55,17 @@ const Footer = () => {
               <Link href="/contact-us" className="hover:opacity-80 text-base">Contact Us</Link>
             </div>
             <div className="flex flex-col items-center md:items-start space-y-2">
-              <Link href="#" className="hover:opacity-80 text-base">Terms and Conditions</Link>
-              <Link href="#" className="hover:opacity-80 text-base">Privacy Policy</Link>
-              <Link href="#" className="hover:opacity-80 text-base">Cancellation Policy</Link>
-              <Link href="#" className="hover:opacity-80 text-base">Payment Policy</Link>
-              <Link href="#" className="hover:opacity-80 text-base">Refund Policy</Link>
+              <Link href="/policies/terms-and-conditions" className="hover:opacity-80 text-base">Terms and Conditions</Link>
+              <Link href="/policies/privacy-policy" className="hover:opacity-80 text-base">Privacy Policy</Link>
+              <Link href="/policies/cancellation-policy" className="hover:opacity-80 text-base">Cancellation Policy</Link>
+              <Link href="/policies/payment-policy" className="hover:opacity-80 text-base">Payment Policy</Link>
+              <Link href="/policies/refund-policy" className="hover:opacity-80 text-base">Refund Policy</Link>
             </div>
           </div>
         </div>
 
         <div className="mt-16 pt-6 flex flex-col md:flex-row items-center justify-center text-sm text-gray-400 gap-2 md:gap-1">
-          <p>Copyright © 2024 JustVy Global Innovations.</p>
+          <p>Copyright © 2024 Justvy Global Innovations.</p>
           <p>All rights reserved.</p>
         </div>
       </div>

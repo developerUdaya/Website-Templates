@@ -7,7 +7,7 @@ const AboutUsTextSection = () => {
       <div className="max-w-5xl mx-auto">
       <FadeInSection>
         <p className="text-2xl md:text-3xl lg:text-4xl leading-relaxed text-black">
-          At <span className="italic font-semibold">JustVy</span>, we bring all your business needs into one place 
+          At <span className="italic font-semibold">Justvy</span>, we bring all your business needs into one place 
           with cutting-edge technology and intelligent automation. From streamlining operations to boosting 
           productivity, our solutions are designed to drive innovation and growth across your organization.
         </p>

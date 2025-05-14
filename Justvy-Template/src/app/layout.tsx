@@ -4,8 +4,8 @@ import ClientBody from "./ClientBody";
 
 export const metadata: Metadata = {
   title: "Justvy Global Innovations",
-  description: "JustVy Global Innovations is a software company delivering custom websites, e-commerce platforms, and 3D web solutions.",
-  keywords: "JustVy, JustVy Global Innovations, software development, IT solutions, web development, e-commerce platforms",
+  description: "Justvy Global Innovations is a software company delivering custom websites, e-commerce platforms, and 3D web solutions.",
+  keywords: "Justvy, Justvy Global Innovations, software development, IT solutions, web development, e-commerce platforms",
   icons: {
     icon: "/images/logo.png",
   },

@@ -25,7 +25,7 @@ const testimonials = [
     name: 'Vignesh Chandrasekar',
     position: 'CTO, TechCorp',
     imageSrc: '/images/review-3.png',
-    content: `“JustVy has transformed our business. Their energetic team brings new ideas and offers 24/7 support, keeping us covered at all times. Their dedication and skill have truly exceeded our expectations”`
+    content: `“Justvy has transformed our business. Their energetic team brings new ideas and offers 24/7 support, keeping us covered at all times. Their dedication and skill have truly exceeded our expectations”`
   }
 ];
 
@@ -219,8 +219,8 @@ const ClientsExperienceSection = ({
     <section ref={sectionRef} className="py-20 bg-white relative">
       <div className="container mx-auto px-4 md:px-8">
         <div className="mb-12 md:mb-16 flex items-end justify-between pl-2 lg:pl-12 pr-2 lg:pr-12">
-            <h2 className="text-2xl md:text-4xl">
-              <span className="italic-heading block pb-2">
+            <h2 className="text-3xl md:text-4xl">
+              <span className="italic-heading block pb-1 md:pb-2">
                 {renderAnimatedText(title, controls1)}
               </span>
               <span>

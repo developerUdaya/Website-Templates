@@ -26,7 +26,7 @@ const ContactSection = () => {
               </div>
               <div className="text-center md:text-left">
                 <h4 className="text-lg font-semibold">Email</h4>
-                <a className="text-gray-700" href="mailto:info@justvy.in">info@justvy.in</a>
+                <a className="text-gray-700" href="mailto:info@Justvy.in">info@Justvy.in</a>
               </div>
             </div>
 
@@ -53,14 +53,14 @@ const ContactSection = () => {
             <div className="flex items-center gap-4 flex-wrap justify-center md:justify-start mt-6 pl-2">
               <span className="text-lg whitespace-nowrap">Follow us on:</span>
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/Justvy_global_innovations_llp?igsh=d3k0cnlyOTIxbmVs"
                 target="_blank"
                 className="text-black text-2xl hover:text-blue-700 transition duration-300"
               >
                 <FaInstagram />
               </a>
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/company/Justvy-global-innovations/"
                 target="_blank"
                 className="text-black text-2xl hover:text-blue-700 transition duration-300"
               >
