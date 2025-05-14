@@ -24,7 +24,7 @@ const Navigation = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${
-        scrolled ? 'bg-white py-4 shadow-md' : 'bg-transparent py-4'
+        scrolled ? 'bg-white py-4 shadow-md' : 'bg-neutral-900 py-4'
       }`}
     >
       <nav className="w-full max-w-[1200px] mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-4">

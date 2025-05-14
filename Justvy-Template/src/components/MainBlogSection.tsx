@@ -15,8 +15,8 @@ interface MainBlogSectionProps {
 const MainBlogSection = ({
   imageSrc,
   title = 'Empowering Innovation with Scalable Software Solutions',
-  description = `In today’s fast-paced digital world, businesses need more than just code—they need adaptable, high-performance systems that grow with them. At our company, we specialize in building tailored software that accelerates innovation, improves workflows, and delivers measurable impact across industries.`,
-  additionalDescription = 'Our team combines technical expertise with a deep understanding of user experience, ensuring every solution is intuitive, efficient, and aligned with your business goals. From startups to enterprise clients, we deliver robust platforms using modern frameworks, cloud technologies, and agile methodologies that ensure long-term success.',
+  description = `In today’s fast-paced digital world, businesses need more than just code—they need adaptable, high-performance systems that grow with them. The demand is shifting toward scalable software solutions that not only meet current operational needs but also support future expansion and innovation.`,
+  additionalDescription = 'Tailored software plays a vital role in this shift, enabling organizations to streamline workflows, respond quickly to market changes, and achieve measurable impact across various industries. By combining technical precision with a strong focus on user experience, modern development teams are building solutions that are intuitive, efficient, and aligned with strategic business goals.',
   flip = false,
   link = "#"
 }: MainBlogSectionProps) => {
@@ -34,7 +34,7 @@ const MainBlogSection = ({
             <div className="text-base text-gray-600 leading-relaxed mb-6">
               <FadeInSection>{additionalDescription}</FadeInSection>
             </div>
-            <Link href={link}>
+            <Link href="/blog-content/blog-1">
               <FadeInSection>
                 <button className="px-6 py-2 border border-gray-800 text-gray-800 hover:bg-gray-100 transition duration-200">
                   Explore

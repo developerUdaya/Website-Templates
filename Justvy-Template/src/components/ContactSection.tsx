@@ -7,7 +7,7 @@ const ContactSection = () => {
     <section id="next-section" className="bg-[#f2f2f2] py-12 md:py-20 px-6 md:px-2">
       <div className="flex flex-col md:flex-row gap-0">
         <div className="w-full md:w-[70%] lg:w-[40%] px-6 md:px-10 mb-10 md:mb-0">
-          <h2 className="text-4xl font-bold text-center md:text-left pt-4 mb-8">Get In Touch</h2>
+          <h2 className="text-4xl font-bold text-center md:text-left pt-0 mb-8">Get In Touch</h2>
   
           <div className="space-y-6 text-base text-black w-full">
           <div className="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-2 md:gap-4">
