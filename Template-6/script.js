@@ -32,5 +32,3 @@ closeMenuBtn.addEventListener('click', () => {
   mobileMenu.classList.remove('active');
   body.style.overflow = '';
 });
-
-
