@@ -1,3 +1,11 @@
+//Page reload
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+window.addEventListener('load', function () {
+    window.scrollTo(0, 0);
+});
+
 // Sticky navbar logic
 const stickyNavbar = document.getElementById("sticky-navbar");
 window.addEventListener("scroll", () => {
@@ -6,6 +14,13 @@ window.addEventListener("scroll", () => {
   } else {
     stickyNavbar.classList.remove("visible");
   }
+});
+
+//Button movement
+document.querySelectorAll('.choose-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 });
 
 // Accordion logic
