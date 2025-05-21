@@ -1993,7 +1993,7 @@ h3 {
     font-size: 30px;
   }
   .accordion-button p{
-    width:90%;
+    width:95%;
     padding-left: 10px;
   }
   .accordion-button.active{
@@ -2005,6 +2005,10 @@ h3 {
   .accordion-content p {
     line-height: 1.6;
     font-size: 22px;
+  }
+  .accordion-button svg {
+    right:30px;
+    top: 40px;
   }
 }
 @media(max-width:1024px){
@@ -2023,6 +2027,10 @@ h3 {
   .accordion-button p{
     width:90%;
     padding-left:10px;
+  }
+  .accordion-button svg {
+    right:30px;
+    top: 50px;
   }
   .accordion-button.active{
     padding-bottom: 10px;
@@ -2185,7 +2193,6 @@ h3 {
   color: #2e1c74;
   padding: 0px 10px;
 }
-
 @media(max-width:1150px){
   .footer {
     padding: 40px 50px 25px 130px;
