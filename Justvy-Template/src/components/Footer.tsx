@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_1.5fr_2fr] lg:grid-cols-[1fr_1fr_2fr] gap-0 md:gap-12 text-center md:text-left">
 
-          <div className="flex justify-center md:justify-start mb-10 md:mb-0">
+          <div className="flex justify-center md:justify-start mb-10 md:mb-20 ml-0 lg:ml-12">
             <Image
               src="/images/logo.png"
               alt="Justvy"

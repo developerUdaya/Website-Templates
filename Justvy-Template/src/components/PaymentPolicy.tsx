@@ -2,7 +2,7 @@ import React from 'react';
 
 const PaymentPolicy = () => {
   return (
-    <section id='next-section' className="bg-white flex justify-center items-start pt-12 pb-12 lg:py-16 px-8 md:px-12">
+    <section id='next-section' className="bg-white flex justify-center items-start pt-12 pb-12 lg:pt-16 lg:pb-20 px-8 md:px-12">
       <div className="max-w-3xl text-black text-left md:text-justify space-y-4 text-base leading-relaxed">
         <p>
          At Justvy Global Innovations LLP, we are committed to maintaining a transparent and straightforward payment process for our clients. 
